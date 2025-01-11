@@ -3,9 +3,10 @@ using System;
 using UnityEngine.SceneManagement;
 
 public class InGameController : MonoBehaviour
-{    
+{
+    
 
-	#region Unity Callbacks
+    #region Unity Callbacks
 
 
     // Update is called once per frame
@@ -14,5 +15,7 @@ public class InGameController : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.Escape))
             SceneManager.LoadScene("MainMenu");
     }
-	#endregion
+
+
+    #endregion
 }
