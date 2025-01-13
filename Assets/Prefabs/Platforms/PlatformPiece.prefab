@@ -48,6 +48,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   platformCollider: {fileID: 9116608081993719755}
+  triggerCollider: {fileID: 0}
 --- !u!212 &4904508615753384967
 SpriteRenderer:
   m_ObjectHideFlags: 0

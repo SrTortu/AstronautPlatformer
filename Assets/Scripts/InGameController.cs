@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 public class InGameController : MonoBehaviour
 {
     
+    public static InGameController InstanceController; // Singleton para acceso global
 
     #region Unity Callbacks
 
@@ -16,6 +17,35 @@ public class InGameController : MonoBehaviour
             SceneManager.LoadScene("MainMenu");
     }
 
+    private void Awake()
+    {
+        if (InstanceController == null)
+        {
+            InstanceController = this;
+        }
+        else
+        {
+            Destroy(gameObject); 
+        }
+    }
+
+
 
     #endregion
+    public void PlayerEnteredPlatformTrigger(PlataformColisionController platform, Collider2D player)
+    {
+       
+        if (player.transform.position.y < platform.transform.position.y)
+        {
+            Physics2D.IgnoreCollision(player, platform.PlatformCollider, true);
+           
+        }
+    }
+
+    public void PlayerExitedPlatformTrigger(PlataformColisionController platform, Collider2D player)
+    {
+        
+        Physics2D.IgnoreCollision(player, platform.PlatformCollider, false);
+       
+    }
 }

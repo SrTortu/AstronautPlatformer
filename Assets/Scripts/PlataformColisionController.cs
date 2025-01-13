@@ -2,22 +2,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Collider2D))]
 public class PlataformColisionController : MonoBehaviour
 {
     // Start is called before the first frame update
-    
-    [SerializeField] private Collider2D platformCollider;
 
- 
+    private Collider2D platformCollider;
+    
+
+
+    private void Awake()
+    {
+        platformCollider = GetComponent<Collider2D>();
+    }
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
-            if (collision.transform.position.y < transform.position.y)
-            {
-                Physics2D.IgnoreCollision(collision, platformCollider, true);
-                Debug.Log("Debajo debajo");
-            }
+            InGameController.InstanceController.PlayerEnteredPlatformTrigger(this, collision);
         }
     }
 
@@ -25,9 +27,14 @@ public class PlataformColisionController : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            // Rehabilitar la colisión cuando el jugador salga del área
-            Physics2D.IgnoreCollision(collision, platformCollider, false);
+            InGameController.InstanceController.PlayerExitedPlatformTrigger(this, collision);
         }
+    }
+
+    public Collider2D PlatformCollider
+    {
+        get { return platformCollider; }
+        set { platformCollider = value; }
     }
 }
 

@@ -8,6 +8,7 @@ public class InputController : MonoBehaviour
 
 	#region Fields
 	[SerializeField] private Jetpack _jetpack;
+	[SerializeField] private Player _player;
 	#endregion
 
 	#region Unity Callbacks
@@ -31,6 +32,22 @@ public class InputController : MonoBehaviour
 			_jetpack.FlyUp();
 		else
 			_jetpack.StopFlying();
+
+		//Walk
+		if ((Input.GetAxis("Vertical") == 0) &&  (Input.GetAxis("Horizontal") < 0))
+		{
+			_player.Walk(Player.Direction.Left);
+			_player.WalkOn();
+        }
+		if ((Input.GetAxis("Vertical") == 0) && (Input.GetAxis("Horizontal") > 0))
+		{
+			_player.Walk(Player.Direction.Right);
+			_player.WalkOn();
+		}
+		if (Input.GetAxis("Horizontal") == 0)
+        {
+			_player.WalkOff();
+        }
 
 	}
 	#endregion

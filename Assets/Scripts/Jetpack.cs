@@ -23,6 +23,7 @@ public class Jetpack : MonoBehaviour
 		}
 	}
 	public bool Flying { get; set; }
+	
 	#endregion
 
 	#region Fields							     
@@ -33,6 +34,7 @@ public class Jetpack : MonoBehaviour
 	[SerializeField] private float _energyRegenerationRatio;
 	[SerializeField] private float _horizontalForce;
 	[SerializeField] private float _flyForce;
+	
 
 	#endregion
 
@@ -92,6 +94,7 @@ public class Jetpack : MonoBehaviour
 			_targetRB.AddForce(Vector2.right * _horizontalForce);
 
 	}
+
 	#endregion
 
 	#region Private Methods
