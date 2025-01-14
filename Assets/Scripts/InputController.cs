@@ -9,6 +9,7 @@ public class InputController : MonoBehaviour
 	#region Fields
 	[SerializeField] private Jetpack _jetpack;
 	[SerializeField] private Player _player;
+	private Vector3 mousePosition;
 	#endregion
 
 	#region Unity Callbacks
@@ -23,9 +24,15 @@ public class InputController : MonoBehaviour
     {
 		//Horizontal Fly
 		if (Input.GetAxis("Horizontal") < 0)
+        {
+			_player._playerSprite.flipX = false;
 			_jetpack.FlyHorizontal(Jetpack.Direction.Left);
+        }
 		if (Input.GetAxis("Horizontal") > 0)
+        {
+			_player._playerSprite.flipX = true;
 			_jetpack.FlyHorizontal(Jetpack.Direction.Right);
+        }
 
 		//Vertical Fly
 		if (Input.GetAxis("Vertical") > 0)
@@ -43,12 +50,24 @@ public class InputController : MonoBehaviour
 		{
 			_player.Walk(Player.Direction.Right);
 			_player.WalkOn();
+
 		}
 		if (Input.GetAxis("Horizontal") == 0)
-        {
+        {	
 			_player.WalkOff();
         }
 
+		//Aim
+		mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+		if (mousePosition.x > _player.transform.position.x)
+		{
+			_player._playerSprite.flipX = true;
+		}
+		
+		else if (mousePosition.x < _player.transform.position.x)
+		{
+			_player._playerSprite.flipX = false;
+		}
 	}
 	#endregion
 
