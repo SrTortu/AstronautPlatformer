@@ -22,7 +22,8 @@ public class Player : MonoBehaviour
 	[SerializeField] private float _moveForce;
 	private Animator _anim;
 	private Rigidbody2D _targetRB;
-	public SpriteRenderer _playerSprite;
+	public GunController PlayerGun;
+	public Transform PlayerSprite;
 
    
     #endregion
@@ -32,7 +33,8 @@ public class Player : MonoBehaviour
 	{
 		_anim = GetComponent<Animator>();
 		_targetRB = GetComponent<Rigidbody2D>();
-		_playerSprite = GetComponent<SpriteRenderer>();
+		PlayerSprite = GetComponent<Transform>();
+		PlayerGun = GetComponentInChildren<GunController>();
 		
 		
 	}
@@ -58,7 +60,22 @@ public class Player : MonoBehaviour
 	{
 		_walking = false;
 	}
-
+	public void Flip(Direction direction)
+    {
+		
+		Vector3 scale = transform.localScale;
+		if (direction == Direction.Left)
+        {
+			scale.x = -1;
+			PlayerGun.FlipShootPoint(0f);
+        }
+		else
+        {
+			scale.x = 1;
+			PlayerGun.FlipShootPoint(180f);
+		}
+		transform.localScale = scale;
+    }
 	// Update is called once per frame
 	void Update()
     {

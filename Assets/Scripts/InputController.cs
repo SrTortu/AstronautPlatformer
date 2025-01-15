@@ -23,14 +23,14 @@ public class InputController : MonoBehaviour
     void Update()
     {
 		//Horizontal Fly
-		if (Input.GetAxis("Horizontal") < 0)
+		if (Input.GetAxis("Horizontal") < 0)	
         {
-			_player._playerSprite.flipX = false;
+			_player.Flip(Player.Direction.Left);
 			_jetpack.FlyHorizontal(Jetpack.Direction.Left);
         }
 		if (Input.GetAxis("Horizontal") > 0)
         {
-			_player._playerSprite.flipX = true;
+			_player.Flip(Player.Direction.Right);
 			_jetpack.FlyHorizontal(Jetpack.Direction.Right);
         }
 
@@ -52,7 +52,7 @@ public class InputController : MonoBehaviour
 			_player.WalkOn();
 
 		}
-		if (Input.GetAxis("Horizontal") == 0)
+		if (Input.GetAxis("Horizontal") == 0 || (Input.GetAxis("Vertical") > 0))
         {	
 			_player.WalkOff();
         }
@@ -61,12 +61,14 @@ public class InputController : MonoBehaviour
 		mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 		if (mousePosition.x > _player.transform.position.x)
 		{
-			_player._playerSprite.flipX = true;
+			_player.Flip(Player.Direction.Left);
+			_player.PlayerGun.Aim(mousePosition);
 		}
 		
 		else if (mousePosition.x < _player.transform.position.x)
 		{
-			_player._playerSprite.flipX = false;
+			_player.Flip(Player.Direction.Right);
+			_player.PlayerGun.Aim(mousePosition);
 		}
 	}
 	#endregion
