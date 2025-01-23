@@ -33,7 +33,7 @@ public class Jetpack : MonoBehaviour
 	[SerializeField] private float _energyFlyingRatio;
 	[SerializeField] private float _energyRegenerationRatio;
 	[SerializeField] private float _horizontalForce;
-	[SerializeField] private float _flyForce;
+	[SerializeField] private float _jumForce;
 	
 
 	#endregion
@@ -52,12 +52,7 @@ public class Jetpack : MonoBehaviour
 	// Update is called once per physic frame
 	void FixedUpdate()
 	{
-		if (Flying)
-			DoFly();
-
-		//Le quitamos el signo a la velocidad si es negativa.
-		//Luego si es menor de 0.1, consideramos que estamos parados y cargamos
-		if (Mathf.Abs(_targetRB.velocity.y) < 0.1f)
+		
 			Regenerate();
 	}
 
@@ -67,6 +62,7 @@ public class Jetpack : MonoBehaviour
 	public void FlyUp()
 	{
 		Flying = true;
+		DoFly();
 	}
 	public void StopFlying()
 	{
@@ -100,13 +96,14 @@ public class Jetpack : MonoBehaviour
 	#region Private Methods
 	private void DoFly()
 	{
-		if (Energy > 0)
+		if (Energy > _energyFlyingRatio-1)
 		{
-			_targetRB.AddForce(Vector2.up * _flyForce);
+			_targetRB.AddForce(Vector2.up * _jumForce, ForceMode2D.Impulse);
 			Energy -= _energyFlyingRatio;
 		}
 		else
 			Flying = false;
+		
 	}
 	#endregion
 }

@@ -35,10 +35,18 @@ public class InputController : MonoBehaviour
         }
 
 		//Vertical Fly
-		if (Input.GetAxis("Vertical") > 0)
-			_jetpack.FlyUp();
+		if (Input.GetKeyDown(KeyCode.Space))
+        {			
+				_jetpack.FlyUp();
+				_player.PlayerGun.DetachHook();
+        }
 		else
+        {
 			_jetpack.StopFlying();
+        }
+		
+		
+		
 
 		//Walk
 		if ((Input.GetAxis("Vertical") == 0) &&  (Input.GetAxis("Horizontal") < 0))
@@ -70,6 +78,15 @@ public class InputController : MonoBehaviour
 			_player.Flip(Player.Direction.Right);
 			_player.PlayerGun.Aim(mousePosition);
 		}
+		//Shoot
+		if(Input.GetMouseButtonDown(0))
+        {
+			_player.Shoot(mousePosition);
+        }
+		if (Input.GetMouseButtonDown(1))
+        {
+			_player.PlayerGun.DetachHook();
+        }
 	}
 	#endregion
 

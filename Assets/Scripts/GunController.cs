@@ -5,13 +5,16 @@ using UnityEngine;
 public class GunController : MonoBehaviour
 {
     [SerializeField]private Transform shootPoint;
+    [SerializeField] private HookTrigger _hookTrigger;
     private void Start()
     {
         shootPoint = transform.Find("shoot_point");
+        _hookTrigger = GetComponentInChildren<HookTrigger>();
+
     }
-    public void Aim(Vector3 position)
+    public void Aim(Vector3 MousePosition)
     {
-        Vector3 direction = position - transform.position;
+        Vector3 direction = MousePosition - transform.position;
 
      
 
@@ -34,5 +37,15 @@ public class GunController : MonoBehaviour
         
         //shootPoint.rotation = Quaternion.Euler(0, angle, 0);
         //Debug.Log($"entre shoot poitn $angle"+ angle);
+    }
+    public void shoot (Vector3 MousePosition)
+    {
+        
+        _hookTrigger.launchHook(MousePosition);
+        
+    }
+    public void DetachHook ()
+    {
+        _hookTrigger.DetachHook();
     }
 }

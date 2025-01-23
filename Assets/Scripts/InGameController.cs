@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 public class InGameController : MonoBehaviour
 {
     
-    public static InGameController InstanceController; // Singleton para acceso global
+    public static InGameController InstanceController; 
 
     #region Unity Callbacks
 
@@ -48,4 +48,5 @@ public class InGameController : MonoBehaviour
         Physics2D.IgnoreCollision(player, platform.PlatformCollider, false);
        
     }
+    
 }

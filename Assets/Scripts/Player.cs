@@ -17,13 +17,15 @@ public class Player : MonoBehaviour
 
 	#region Fields
 	private bool _walking;
+	
 
 	[SerializeField] private Jetpack _jetpack;
-	[SerializeField] private float _moveForce;
+	[SerializeField] private float _moveSpeed;
 	private Animator _anim;
 	private Rigidbody2D _targetRB;
 	public GunController PlayerGun;
 	public Transform PlayerSprite;
+	public bool isOnGround;
 
    
     #endregion
@@ -37,6 +39,7 @@ public class Player : MonoBehaviour
 		PlayerGun = GetComponentInChildren<GunController>();
 		
 		
+		
 	}
 
 	public void Walk(Direction walkDirection)
@@ -44,10 +47,10 @@ public class Player : MonoBehaviour
 		if (_jetpack.Flying)
 			return;
 		if (walkDirection == Direction.Left)
-			_targetRB.AddForce(Vector2.left * _moveForce, ForceMode2D.Impulse);
+			_targetRB.AddForce(Vector2.left * _moveSpeed, ForceMode2D.Impulse);
 		if (walkDirection == Direction.Right)
         {
-			_targetRB.AddForce(Vector2.right * _moveForce, ForceMode2D.Impulse);
+			_targetRB.AddForce(Vector2.right * _moveSpeed, ForceMode2D.Impulse);
 
         }
 	}
@@ -76,6 +79,11 @@ public class Player : MonoBehaviour
 		}
 		transform.localScale = scale;
     }
+	public void Shoot(Vector3 mouseDirection)
+	{
+		
+		PlayerGun.shoot(mouseDirection);
+	}
 	// Update is called once per frame
 	void Update()
     {
