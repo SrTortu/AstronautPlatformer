@@ -1987,6 +1987,10 @@ PrefabInstance:
       value: 170
       objectReference: {fileID: 0}
     - target: {fileID: 6202818291053993745, guid: e19846a3a39bd9842848bcd150224841, type: 3}
+      propertyPath: _jumForce
+      value: 170
+      objectReference: {fileID: 0}
+    - target: {fileID: 6202818291053993745, guid: e19846a3a39bd9842848bcd150224841, type: 3}
       propertyPath: _moveForce
       value: 20
       objectReference: {fileID: 0}
