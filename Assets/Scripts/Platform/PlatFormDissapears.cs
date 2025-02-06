@@ -6,6 +6,7 @@ using UnityEngine;
 public class PlatFormDissapears : MonoBehaviour
 {
     public bool isActive;
+    public bool isHide;
     private bool _corrutineIsOn;
     private Collider2D [] _platformColliders;
     private SpriteRenderer _platformSprite;
@@ -19,6 +20,7 @@ public class PlatFormDissapears : MonoBehaviour
         _platformSprite = this.GetComponent<SpriteRenderer>();
         _platformLight = GetComponent<Light2D>();
         isActive = false;
+        isHide = false;
         _corrutineIsOn = false;
 
     }
@@ -34,20 +36,23 @@ public class PlatFormDissapears : MonoBehaviour
         _corrutineIsOn = true;
         while (isActive)
         {
-            yield return new WaitForSeconds(5f);
+            Debug.Log("Trabajando");
+            yield return new WaitForSeconds(Random.Range(3f,6f));
             foreach (Collider2D i in _platformColliders)
             {
                 i.enabled = false;
             }
             _platformSprite.enabled = false;
             _platformLight.enabled = false;
-            yield return new WaitForSeconds(2f);
+            isHide = true;
+            yield return new WaitForSeconds(Random.Range(1f,2f));
             foreach (Collider2D i in _platformColliders)
             {
                 i.enabled = true;
             }
             _platformSprite.enabled = true;
             _platformLight.enabled = true;
+            isHide = false;
 
         }
         _corrutineIsOn = false;
