@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Platform
   - Ground
+  - PlayerChunk
   layers:
   - Default
   - TransparentFX
@@ -42,4 +43,10 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Escenario
+    uniqueID: 863855035
+    locked: 0
+  - name: Player
+    uniqueID: 888794911
     locked: 0

@@ -1,0 +1,1215 @@
+fileFormatVersion: 2
+guid: 54b33f255052cd848ad8f7577bc80bc9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6068126033608327963
+    second: PixelManPlant_0
+  - first:
+      213: 913691775452753245
+    second: PixelManPlant_1
+  - first:
+      213: -2187877002942285894
+    second: PixelManPlant_2
+  - first:
+      213: -4590990934492174713
+    second: PixelManPlant_3
+  - first:
+      213: 9098618572081944536
+    second: PixelManPlant_4
+  - first:
+      213: -5527455870975712080
+    second: PixelManPlant_5
+  - first:
+      213: 2089553634264196741
+    second: PixelManPlant_6
+  - first:
+      213: 6971717120446459414
+    second: PixelManPlant_7
+  - first:
+      213: -7304312153268001723
+    second: PixelManPlant_8
+  - first:
+      213: -4376699400847677703
+    second: PixelManPlant_9
+  - first:
+      213: -6765715232388179196
+    second: PixelManPlant_10
+  - first:
+      213: -8975973956356495923
+    second: PixelManPlant_11
+  - first:
+      213: -1082684779293468256
+    second: PixelManPlant_12
+  - first:
+      213: 500784617099511700
+    second: PixelManPlant_13
+  - first:
+      213: -4161215812244555331
+    second: PixelManPlant_14
+  - first:
+      213: 3337967629743623409
+    second: PixelManPlant_15
+  - first:
+      213: -8746311484135543181
+    second: PixelManPlant_16
+  - first:
+      213: -2811360730352129836
+    second: PixelManPlant_17
+  - first:
+      213: -9045204983600204315
+    second: PixelManPlant_18
+  - first:
+      213: -6645595909770932833
+    second: PixelManPlant_19
+  - first:
+      213: -211664485753296453
+    second: PixelManPlant_20
+  - first:
+      213: -8260689255658831972
+    second: PixelManPlant_21
+  - first:
+      213: 7120372777706973424
+    second: PixelManPlant_22
+  - first:
+      213: -3101880533124659244
+    second: PixelManPlant_23
+  - first:
+      213: -8652135654715475101
+    second: PixelManPlant_24
+  - first:
+      213: -6993329050599715841
+    second: PixelManPlant_25
+  - first:
+      213: -7058293506003887102
+    second: PixelManPlant_26
+  - first:
+      213: 5342742372284950489
+    second: PixelManPlant_27
+  - first:
+      213: 5183781268583324332
+    second: PixelManPlant_28
+  - first:
+      213: -5737983791572176824
+    second: PixelManPlant_29
+  - first:
+      213: 3519653015712908137
+    second: PixelManPlant_30
+  - first:
+      213: -6721285459849997539
+    second: PixelManPlant_31
+  - first:
+      213: 9012330046251320549
+    second: PixelManPlant_32
+  - first:
+      213: -4820805249678921565
+    second: PixelManPlant_33
+  - first:
+      213: 7084072536134212945
+    second: PixelManPlant_34
+  - first:
+      213: -2996470251689363531
+    second: PixelManPlant_35
+  - first:
+      213: 2579077281136251943
+    second: PixelManPlant_36
+  - first:
+      213: -133682734008875730
+    second: PixelManPlant_37
+  - first:
+      213: -6026557584671076175
+    second: PixelManPlant_38
+  - first:
+      213: 7443453546713652621
+    second: PixelManPlant_39
+  - first:
+      213: -5664607364697090514
+    second: PixelManPlant_40
+  - first:
+      213: -4530255125134747571
+    second: PixelManPlant_41
+  - first:
+      213: 2848974812764668183
+    second: PixelManPlant_42
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PixelManPlant_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 175
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ecb972d58fa9cba0800000000000000
+      internalID: -6068126033608327963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlant_1
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 175
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5dae0e24d51eac00800000000000000
+      internalID: 913691775452753245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlant_2
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 175
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab7f06b257913a1e0800000000000000
+      internalID: -2187877002942285894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlant_3
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 175
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7862e86b1168940c0800000000000000
+      internalID: -4590990934492174713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlant_4
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 175
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d757bf7269c44e70800000000000000
+      internalID: 9098618572081944536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlant_5
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 175
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b468dacb288a43b0800000000000000
+      internalID: -5527455870975712080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlant_6
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 175
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 586a17d95f59ffc10800000000000000
+      internalID: 2089553634264196741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlant_7
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 175
+        width: 6
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61e68b688c380c060800000000000000
+      internalID: 6971717120446459414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlant_8
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 133
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54464e7ebced1aa90800000000000000
+      internalID: -7304312153268001723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlant_9
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 133
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f62fcb6517d243c0800000000000000
+      internalID: -4376699400847677703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlant_10
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 133
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40b9d0aa7d95b12a0800000000000000
+      internalID: -6765715232388179196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlant_11
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 133
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc5a6325e3fee6380800000000000000
+      internalID: -8975973956356495923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlant_12
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 133
+        width: 13
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a99d76fde789f0f0800000000000000
+      internalID: -1082684779293468256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlant_13
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 133
+        width: 4
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 497423bb4f423f600800000000000000
+      internalID: 500784617099511700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlant_14
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 133
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db9bc6d04446046c0800000000000000
+      internalID: -4161215812244555331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlant_15
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 133
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fc0f9abfd7d25e20800000000000000
+      internalID: 3337967629743623409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlant_16
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 133
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37e6e2d8b0cde9680800000000000000
+      internalID: -8746311484135543181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlant_17
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 133
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d8e0eb9f4a0cf8d0800000000000000
+      internalID: -2811360730352129836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlant_18
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 133
+        width: 6
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e5baefadf9f87280800000000000000
+      internalID: -9045204983600204315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlant_19
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 133
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9d805ddab916c3a0800000000000000
+      internalID: -6645595909770932833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlant_20
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 133
+        width: 14
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb9eb1b8544001df0800000000000000
+      internalID: -211664485753296453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlant_21
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 77
+        width: 21
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9fb19493e22c5d80800000000000000
+      internalID: -8260689255658831972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlant_22
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 77
+        width: 15
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f8e593e055a0d260800000000000000
+      internalID: 7120372777706973424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlant_23
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 77
+        width: 17
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d7c76fe618e3f4d0800000000000000
+      internalID: -3101880533124659244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlant_24
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 77
+        width: 19
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36b313886707de780800000000000000
+      internalID: -8652135654715475101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlant_25
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 77
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffb859dd744b2fe90800000000000000
+      internalID: -6993329050599715841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlant_26
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 77
+        width: 3
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20c1136e377eb0e90800000000000000
+      internalID: -7058293506003887102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlant_27
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 77
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d7e87a61eb352a40800000000000000
+      internalID: 5342742372284950489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlant_28
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 77
+        width: 6
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caa9b33599d70f740800000000000000
+      internalID: 5183781268583324332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlant_29
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 77
+        width: 9
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 840346884269e50b0800000000000000
+      internalID: -5737983791572176824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlant_30
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 77
+        width: 9
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 963433615c158d030800000000000000
+      internalID: 3519653015712908137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlant_31
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 77
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1394a33c7239b2a0800000000000000
+      internalID: -6721285459849997539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlant_32
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 19
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e4c36d7d6a321d70800000000000000
+      internalID: 9012330046251320549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlant_33
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 19
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a0bc89ca2f091db0800000000000000
+      internalID: -4820805249678921565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlant_34
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 19
+        width: 21
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15d5167407eaf4260800000000000000
+      internalID: 7084072536134212945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlant_35
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 19
+        width: 15
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b7b70c9e266a66d0800000000000000
+      internalID: -2996470251689363531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlant_36
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 19
+        width: 17
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72418666f19bac320800000000000000
+      internalID: 2579077281136251943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlant_37
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 19
+        width: 19
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e254ccef240152ef0800000000000000
+      internalID: -133682734008875730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlant_38
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 19
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b09e3b8ecd5d5ca0800000000000000
+      internalID: -6026557584671076175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlant_39
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 19
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8d1df940957c4760800000000000000
+      internalID: 7443453546713652621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlant_40
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 19
+        width: 6
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e261b2b3d954361b0800000000000000
+      internalID: -5664607364697090514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlant_41
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 175
+        width: 13
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d48537c47fc4121c0800000000000000
+      internalID: -4530255125134747571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlant_42
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 77
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7118fd86f77998720800000000000000
+      internalID: 2848974812764668183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      PixelManPlant_0: -6068126033608327963
+      PixelManPlant_1: 913691775452753245
+      PixelManPlant_10: -6765715232388179196
+      PixelManPlant_11: -8975973956356495923
+      PixelManPlant_12: -1082684779293468256
+      PixelManPlant_13: 500784617099511700
+      PixelManPlant_14: -4161215812244555331
+      PixelManPlant_15: 3337967629743623409
+      PixelManPlant_16: -8746311484135543181
+      PixelManPlant_17: -2811360730352129836
+      PixelManPlant_18: -9045204983600204315
+      PixelManPlant_19: -6645595909770932833
+      PixelManPlant_2: -2187877002942285894
+      PixelManPlant_20: -211664485753296453
+      PixelManPlant_21: -8260689255658831972
+      PixelManPlant_22: 7120372777706973424
+      PixelManPlant_23: -3101880533124659244
+      PixelManPlant_24: -8652135654715475101
+      PixelManPlant_25: -6993329050599715841
+      PixelManPlant_26: -7058293506003887102
+      PixelManPlant_27: 5342742372284950489
+      PixelManPlant_28: 5183781268583324332
+      PixelManPlant_29: -5737983791572176824
+      PixelManPlant_3: -4590990934492174713
+      PixelManPlant_30: 3519653015712908137
+      PixelManPlant_31: -6721285459849997539
+      PixelManPlant_32: 9012330046251320549
+      PixelManPlant_33: -4820805249678921565
+      PixelManPlant_34: 7084072536134212945
+      PixelManPlant_35: -2996470251689363531
+      PixelManPlant_36: 2579077281136251943
+      PixelManPlant_37: -133682734008875730
+      PixelManPlant_38: -6026557584671076175
+      PixelManPlant_39: 7443453546713652621
+      PixelManPlant_4: 9098618572081944536
+      PixelManPlant_40: -5664607364697090514
+      PixelManPlant_41: -4530255125134747571
+      PixelManPlant_42: 2848974812764668183
+      PixelManPlant_5: -5527455870975712080
+      PixelManPlant_6: 2089553634264196741
+      PixelManPlant_7: 6971717120446459414
+      PixelManPlant_8: -7304312153268001723
+      PixelManPlant_9: -4376699400847677703
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

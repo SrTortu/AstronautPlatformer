@@ -1,0 +1,1740 @@
+fileFormatVersion: 2
+guid: d1fc454236444b04a8ed606c0437dd96
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7372711235586966674
+    second: PixelManPlatforms_0
+  - first:
+      213: 7264296252454811243
+    second: PixelManPlatforms_1
+  - first:
+      213: 3187807542198293859
+    second: PixelManPlatforms_2
+  - first:
+      213: 4976600904903370061
+    second: PixelManPlatforms_3
+  - first:
+      213: 1524159139280547041
+    second: PixelManPlatforms_4
+  - first:
+      213: -345523109351949697
+    second: PixelManPlatforms_5
+  - first:
+      213: -629101026413512231
+    second: PixelManPlatforms_6
+  - first:
+      213: -1492560423464408041
+    second: PixelManPlatforms_7
+  - first:
+      213: -4536890951240861031
+    second: PixelManPlatforms_8
+  - first:
+      213: 6214493143520610624
+    second: PixelManPlatforms_9
+  - first:
+      213: -1729791566773763482
+    second: PixelManPlatforms_10
+  - first:
+      213: 3352053821999183461
+    second: PixelManPlatforms_11
+  - first:
+      213: -7955953273813793093
+    second: PixelManPlatforms_12
+  - first:
+      213: -61114772672904969
+    second: PixelManPlatforms_13
+  - first:
+      213: -4173252770906300181
+    second: PixelManPlatforms_14
+  - first:
+      213: 6949437389831835300
+    second: PixelManPlatforms_15
+  - first:
+      213: -6815769715910165888
+    second: PixelManPlatforms_16
+  - first:
+      213: 4664405400116557802
+    second: PixelManPlatforms_17
+  - first:
+      213: 2079621905716374983
+    second: PixelManPlatforms_18
+  - first:
+      213: -9093897911536956493
+    second: PixelManPlatforms_19
+  - first:
+      213: -4332214324985642718
+    second: PixelManPlatforms_20
+  - first:
+      213: -7642744823935160931
+    second: PixelManPlatforms_21
+  - first:
+      213: 5782359260343815617
+    second: PixelManPlatforms_22
+  - first:
+      213: -7965425679484174473
+    second: PixelManPlatforms_23
+  - first:
+      213: -2833231049068120320
+    second: PixelManPlatforms_24
+  - first:
+      213: -4072610475184800243
+    second: PixelManPlatforms_25
+  - first:
+      213: 7005663423876728655
+    second: PixelManPlatforms_26
+  - first:
+      213: 4119246823557762112
+    second: PixelManPlatforms_27
+  - first:
+      213: 3146525181982317208
+    second: PixelManPlatforms_28
+  - first:
+      213: 5510334692855582220
+    second: PixelManPlatforms_29
+  - first:
+      213: 6687899691473683840
+    second: PixelManPlatforms_30
+  - first:
+      213: 6349731250224198485
+    second: PixelManPlatforms_31
+  - first:
+      213: -4522936564363880716
+    second: PixelManPlatforms_32
+  - first:
+      213: -7001159040486239486
+    second: PixelManPlatforms_33
+  - first:
+      213: -8679201648467725981
+    second: PixelManPlatforms_34
+  - first:
+      213: -9221936948984771194
+    second: PixelManPlatforms_35
+  - first:
+      213: -620034386080387289
+    second: PixelManPlatforms_36
+  - first:
+      213: -5608710462190552408
+    second: PixelManPlatforms_37
+  - first:
+      213: 4707754288439905977
+    second: PixelManPlatforms_38
+  - first:
+      213: 606662666962695470
+    second: PixelManPlatforms_39
+  - first:
+      213: -6093839842289017529
+    second: PixelManPlatforms_40
+  - first:
+      213: 1744238770190106179
+    second: PixelManPlatforms_41
+  - first:
+      213: -1623635275057111292
+    second: PixelManPlatforms_42
+  - first:
+      213: 3987631348063970703
+    second: PixelManPlatforms_43
+  - first:
+      213: 1030228610751970562
+    second: PixelManPlatforms_44
+  - first:
+      213: 548799355827228514
+    second: PixelManPlatforms_45
+  - first:
+      213: -2442039544532406783
+    second: PixelManPlatforms_46
+  - first:
+      213: 6207967870526964446
+    second: PixelManPlatforms_47
+  - first:
+      213: 8216468325662169945
+    second: PixelManPlatforms_48
+  - first:
+      213: 5940958269788653233
+    second: PixelManPlatforms_49
+  - first:
+      213: 8767613644220065263
+    second: PixelManPlatforms_50
+  - first:
+      213: -5727799331803682551
+    second: PixelManPlatforms_51
+  - first:
+      213: -5297367377034354487
+    second: PixelManPlatforms_52
+  - first:
+      213: -3634988662120565798
+    second: PixelManPlatforms_53
+  - first:
+      213: -5672786294034388157
+    second: PixelManPlatforms_54
+  - first:
+      213: -6202984136308333641
+    second: PixelManPlatforms_55
+  - first:
+      213: -8563626200896660311
+    second: PixelManPlatforms_56
+  - first:
+      213: -1544652847009594247
+    second: PixelManPlatforms_57
+  - first:
+      213: -7205792586455647577
+    second: PixelManPlatforms_58
+  - first:
+      213: -4474712023307704747
+    second: PixelManPlatforms_59
+  - first:
+      213: 7038809843600859439
+    second: PixelManPlatforms_60
+  - first:
+      213: -7527764029366457560
+    second: PixelManPlatforms_61
+  - first:
+      213: 4418190150289908198
+    second: PixelManPlatforms_62
+  - first:
+      213: -4890138577653592106
+    second: PixelManPlatforms_63
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PixelManPlatforms_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 100
+        width: 32
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29441b47ec1215660800000000000000
+      internalID: 7372711235586966674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlatforms_1
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 100
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6635c624f6ffc460800000000000000
+      internalID: 7264296252454811243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlatforms_2
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 100
+        width: 27
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3655a05e11e5d3c20800000000000000
+      internalID: 3187807542198293859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlatforms_3
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 100
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4527a5e720701540800000000000000
+      internalID: 4976600904903370061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlatforms_4
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 100
+        width: 32
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ec6bfd69a6e62510800000000000000
+      internalID: 1524159139280547041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlatforms_5
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 100
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7a736d0094743bf0800000000000000
+      internalID: -345523109351949697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlatforms_6
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 100
+        width: 27
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d9f9c813fbf447f0800000000000000
+      internalID: -629101026413512231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlatforms_7
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 100
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71ce899e33c594be0800000000000000
+      internalID: -1492560423464408041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlatforms_8
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 100
+        width: 32
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99aba92a7b9b901c0800000000000000
+      internalID: -4536890951240861031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlatforms_9
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 100
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04985a696905e3650800000000000000
+      internalID: 6214493143520610624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlatforms_10
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 100
+        width: 27
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 662cbfe1cbb8ef7e0800000000000000
+      internalID: -1729791566773763482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlatforms_11
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 100
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5667040f033e48e20800000000000000
+      internalID: 3352053821999183461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlatforms_12
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 86
+        width: 30
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb609b066a6c69190800000000000000
+      internalID: -7955953273813793093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlatforms_13
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 86
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f08d442070e62ff0800000000000000
+      internalID: -61114772672904969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlatforms_14
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 86
+        width: 27
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be0273837b0a516c0800000000000000
+      internalID: -4173252770906300181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlatforms_15
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 86
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ae8eb18c7c517060800000000000000
+      internalID: 6949437389831835300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlatforms_16
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 86
+        width: 32
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08a3f4c0e858961a0800000000000000
+      internalID: -6815769715910165888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlatforms_17
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 86
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae77c529ffb4bb040800000000000000
+      internalID: 4664405400116557802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlatforms_18
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 86
+        width: 27
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cd685dda1d4cdc10800000000000000
+      internalID: 2079621905716374983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlatforms_19
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 86
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bb4c2fe70cfbc180800000000000000
+      internalID: -9093897911536956493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlatforms_20
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 86
+        width: 30
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2214f544602e0e3c0800000000000000
+      internalID: -4332214324985642718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlatforms_21
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 86
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9da36c53148fe590800000000000000
+      internalID: -7642744823935160931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlatforms_22
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 86
+        width: 27
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cdcb7c6c111f3050800000000000000
+      internalID: 5782359260343815617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlatforms_23
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 86
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77f32911c8f157190800000000000000
+      internalID: -7965425679484174473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlatforms_24
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 65
+        width: 32
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 007ffa93f575ea8d0800000000000000
+      internalID: -2833231049068120320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlatforms_25
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 65
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0e3316b95e2b77c0800000000000000
+      internalID: -4072610475184800243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlatforms_26
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 65
+        width: 27
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f478e1434cd193160800000000000000
+      internalID: 7005663423876728655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlatforms_27
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 65
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04c015c49218a2930800000000000000
+      internalID: 4119246823557762112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlatforms_28
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 70
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89a90e46bf3baab20800000000000000
+      internalID: 3146525181982317208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlatforms_29
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 65
+        width: 32
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0e0b294534a87c40800000000000000
+      internalID: 5510334692855582220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlatforms_30
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 65
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 085cbbbd55130dc50800000000000000
+      internalID: 6687899691473683840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlatforms_31
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 65
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5537fc40ee6ce1850800000000000000
+      internalID: 6349731250224198485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlatforms_32
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 48
+        width: 32
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f61773882d4b31c0800000000000000
+      internalID: -4522936564363880716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlatforms_33
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 48
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2039dc742f2e6de90800000000000000
+      internalID: -7001159040486239486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlatforms_34
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 48
+        width: 27
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 361b819c5184d8780800000000000000
+      internalID: -8679201648467725981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlatforms_35
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 48
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68d86be6439150080800000000000000
+      internalID: -9221936948984771194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlatforms_36
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 53
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72fa62dc2023567f0800000000000000
+      internalID: -620034386080387289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlatforms_37
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 48
+        width: 32
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8aa7d150d8bd922b0800000000000000
+      internalID: -5608710462190552408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlatforms_38
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 48
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9be4844259d455140800000000000000
+      internalID: 4707754288439905977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlatforms_39
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 48
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e257dca3b7c4b6800800000000000000
+      internalID: 606662666962695470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlatforms_40
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 30
+        width: 34
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74d9d3233f45e6ba0800000000000000
+      internalID: -6093839842289017529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlatforms_41
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 30
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34e35ac8be7c43810800000000000000
+      internalID: 1744238770190106179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlatforms_42
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 30
+        width: 27
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40f5d69d150b779e0800000000000000
+      internalID: -1623635275057111292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlatforms_43
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 30
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f85a09c6599e65730800000000000000
+      internalID: 3987631348063970703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlatforms_44
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 35
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20db05d867b1c4e00800000000000000
+      internalID: 1030228610751970562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlatforms_45
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 30
+        width: 34
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26f8b014b1abd9700800000000000000
+      internalID: 548799355827228514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlatforms_46
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 30
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10e60b409f12c1ed0800000000000000
+      internalID: -2442039544532406783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlatforms_47
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 30
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed24cc313e1272650800000000000000
+      internalID: 6207967870526964446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlatforms_48
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 14
+        width: 32
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95b9753d862c60270800000000000000
+      internalID: 8216468325662169945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlatforms_49
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 14
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b60c20e116827250800000000000000
+      internalID: 5940958269788653233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlatforms_50
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 14
+        width: 27
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe5ea971822dca970800000000000000
+      internalID: 8767613644220065263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlatforms_51
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 14
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9092f1bdad4c280b0800000000000000
+      internalID: -5727799331803682551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlatforms_52
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 19
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c0ef1fef68fb76b0800000000000000
+      internalID: -5297367377034354487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlatforms_53
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 14
+        width: 32
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad33bbf121ded8dc0800000000000000
+      internalID: -3634988662120565798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlatforms_54
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 14
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34b2069dbe63641b0800000000000000
+      internalID: -5672786294034388157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlatforms_55
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 14
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b365f7fac29ae9a0800000000000000
+      internalID: -6202984136308333641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlatforms_56
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 65
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ac9352a753e72980800000000000000
+      internalID: -8563626200896660311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlatforms_57
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 65
+        width: 27
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97482b86b6a409ae0800000000000000
+      internalID: -1544652847009594247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlatforms_58
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 65
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7aafa2f02d1effb90800000000000000
+      internalID: -7205792586455647577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlatforms_59
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 51
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55623927f11a6e1c0800000000000000
+      internalID: -4474712023307704747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlatforms_60
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 51
+        width: 27
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f212a517240eea160800000000000000
+      internalID: 7038809843600859439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlatforms_61
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 51
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82b26a4cf72088790800000000000000
+      internalID: -7527764029366457560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlatforms_62
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 35
+        width: 32
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e1e82a7880905d30800000000000000
+      internalID: 4418190150289908198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelManPlatforms_63
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 21
+        width: 30
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6df06886fdcb22cb0800000000000000
+      internalID: -4890138577653592106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      PixelManPlatforms_0: 7372711235586966674
+      PixelManPlatforms_1: 7264296252454811243
+      PixelManPlatforms_10: -1729791566773763482
+      PixelManPlatforms_11: 3352053821999183461
+      PixelManPlatforms_12: -7955953273813793093
+      PixelManPlatforms_13: -61114772672904969
+      PixelManPlatforms_14: -4173252770906300181
+      PixelManPlatforms_15: 6949437389831835300
+      PixelManPlatforms_16: -6815769715910165888
+      PixelManPlatforms_17: 4664405400116557802
+      PixelManPlatforms_18: 2079621905716374983
+      PixelManPlatforms_19: -9093897911536956493
+      PixelManPlatforms_2: 3187807542198293859
+      PixelManPlatforms_20: -4332214324985642718
+      PixelManPlatforms_21: -7642744823935160931
+      PixelManPlatforms_22: 5782359260343815617
+      PixelManPlatforms_23: -7965425679484174473
+      PixelManPlatforms_24: -2833231049068120320
+      PixelManPlatforms_25: -4072610475184800243
+      PixelManPlatforms_26: 7005663423876728655
+      PixelManPlatforms_27: 4119246823557762112
+      PixelManPlatforms_28: 3146525181982317208
+      PixelManPlatforms_29: 5510334692855582220
+      PixelManPlatforms_3: 4976600904903370061
+      PixelManPlatforms_30: 6687899691473683840
+      PixelManPlatforms_31: 6349731250224198485
+      PixelManPlatforms_32: -4522936564363880716
+      PixelManPlatforms_33: -7001159040486239486
+      PixelManPlatforms_34: -8679201648467725981
+      PixelManPlatforms_35: -9221936948984771194
+      PixelManPlatforms_36: -620034386080387289
+      PixelManPlatforms_37: -5608710462190552408
+      PixelManPlatforms_38: 4707754288439905977
+      PixelManPlatforms_39: 606662666962695470
+      PixelManPlatforms_4: 1524159139280547041
+      PixelManPlatforms_40: -6093839842289017529
+      PixelManPlatforms_41: 1744238770190106179
+      PixelManPlatforms_42: -1623635275057111292
+      PixelManPlatforms_43: 3987631348063970703
+      PixelManPlatforms_44: 1030228610751970562
+      PixelManPlatforms_45: 548799355827228514
+      PixelManPlatforms_46: -2442039544532406783
+      PixelManPlatforms_47: 6207967870526964446
+      PixelManPlatforms_48: 8216468325662169945
+      PixelManPlatforms_49: 5940958269788653233
+      PixelManPlatforms_5: -345523109351949697
+      PixelManPlatforms_50: 8767613644220065263
+      PixelManPlatforms_51: -5727799331803682551
+      PixelManPlatforms_52: -5297367377034354487
+      PixelManPlatforms_53: -3634988662120565798
+      PixelManPlatforms_54: -5672786294034388157
+      PixelManPlatforms_55: -6202984136308333641
+      PixelManPlatforms_56: -8563626200896660311
+      PixelManPlatforms_57: -1544652847009594247
+      PixelManPlatforms_58: -7205792586455647577
+      PixelManPlatforms_59: -4474712023307704747
+      PixelManPlatforms_6: -629101026413512231
+      PixelManPlatforms_60: 7038809843600859439
+      PixelManPlatforms_61: -7527764029366457560
+      PixelManPlatforms_62: 4418190150289908198
+      PixelManPlatforms_63: -4890138577653592106
+      PixelManPlatforms_7: -1492560423464408041
+      PixelManPlatforms_8: -4536890951240861031
+      PixelManPlatforms_9: 6214493143520610624
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
