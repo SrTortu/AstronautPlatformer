@@ -10,7 +10,7 @@ public class HookTrigger : MonoBehaviour
     [SerializeField]private float _hookSpeed;
     [SerializeField]private float _hookMaxDistance;
     public LineRenderer hookLine;
-    public LineRenderer lineTest;
+    private PlatFormDissapears _platFormDissapears;
     private Vector3 _hookPoint;
     private Transform _initialHookPosition;
     private Vector3 direction;
@@ -18,15 +18,15 @@ public class HookTrigger : MonoBehaviour
     private RaycastHit2D _hit;
     private RaycastHit2D _hitTemp; // Temporal para detectar si el punto de enganche se ha desaparecido
     private float _hookSpeedAlter;
-
+    private bool isSpecial;
     private bool isHooked;
    
     void Start()
     {
         _initialHookPosition = this.transform;
         hookLine = GetComponent<LineRenderer>();
-        lineTest = GetComponent<LineRenderer>();
         isHooked = false;
+        isSpecial = false;
         _playerRB = GetComponentInParent<Rigidbody2D>();
         hookLine.enabled = false;
     }
@@ -48,6 +48,7 @@ public class HookTrigger : MonoBehaviour
             hookLine.enabled = true;
             hookLine.SetPosition(0, this.transform.position);
             hookLine.SetPosition(1, _hookPoint);
+            isSpecial = _hit.collider.gameObject.TryGetComponent<PlatFormDissapears>(out _platFormDissapears);
         }
     }
     public void MoveTowardsHook()
@@ -79,7 +80,7 @@ public class HookTrigger : MonoBehaviour
         RaycastHit2D hit = Physics2D.Raycast(initialPosition.position, direction, _hookMaxDistance, platformLayer);
         return hit;
     }
-
+    
     public void DetachHook()
     {
         isHooked = false;
@@ -87,15 +88,15 @@ public class HookTrigger : MonoBehaviour
     }
     private void Update()
     {
-        _hit = launchHit(_initialHookPosition);
-        if (_hit.collider == null)
+        if(isSpecial)
+        {
+            if(_platFormDissapears.isHide)
             DetachHook();
+        }
         if (isHooked)
             MoveTowardsHook();
 
         // Update rope
-        lineTest.SetPosition(0, this.transform.position);
-        lineTest.SetPosition(1, _hitTemp.point);
 
         hookLine.SetPosition(0, this.transform.position);
         hookLine.SetPosition(1, _hookPoint);
