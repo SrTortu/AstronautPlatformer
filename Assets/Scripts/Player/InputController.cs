@@ -49,14 +49,14 @@ public class InputController : MonoBehaviour
 		
 
 		//Aim
-		mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-		if (mousePosition.x > _player.transform.position.x)
+		mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition); //Captura la posicion del mouse en el juego
+		if (mousePosition.x > _player.transform.position.x) //Verifica si la posicion del mouse esta a la derecha del player
 		{
-			_player.Flip(Player.Direction.Left);
-			_player.PlayerGun.Aim(mousePosition);
+			_player.Flip(Player.Direction.Left); //Visualmente cambia la direccion del player relativamente a la posicion del mouse
+			_player.PlayerGun.Aim(mousePosition);//El arma apunta a la posisicion relativa del mouse
 		}
 		
-		else if (mousePosition.x < _player.transform.position.x)
+		else if (mousePosition.x < _player.transform.position.x)//Verifica si la posicion del mouse esta a la izquierda del player
 		{
 			_player.Flip(Player.Direction.Right);
 			_player.PlayerGun.Aim(mousePosition);
@@ -65,7 +65,7 @@ public class InputController : MonoBehaviour
 		if(Input.GetMouseButtonDown(0))
         {
 			_player.Shoot(mousePosition);
-			Debug.Log("disparo");
+	
         }
 		if (Input.GetMouseButtonDown(1))
         {

@@ -24,13 +24,13 @@ public class UIController : MonoBehaviour
     {
 		_audioSource = GetComponent<AudioSource>();
     }
-    // Update is called once per frame
+ 
     void Update()
     {
 		_energySlider.value = _jetpack.Energy;
 		_textSlider.text = ((int)_jetpack.transform.position.y).ToString();
 
-		if(!_jetpack.Flying && Input.GetKeyDown(KeyCode.Space))
+		if(!_jetpack.Flying && Input.GetKeyDown(KeyCode.Space)) //Si se presiona la tecla space y el player no logra volar implica que no tiene energia
         {
 			_audioSource.PlayOneShot(_noEnergySound);
 			StartCoroutine(ShowAlert());
@@ -43,8 +43,8 @@ public class UIController : MonoBehaviour
 	
 	IEnumerator ShowAlert()
 	{
-		_energyAlert.gameObject.SetActive(true); // Mostrar alerta
-		yield return new WaitForSeconds(1f); // Esperar 1 segundo
+		_energyAlert.gameObject.SetActive(true); // Mostrar alerta de poca energia
+		yield return new WaitForSeconds(1f);
 		_energyAlert.gameObject.SetActive(false); // Ocultar alerta
 	}
 	#endregion

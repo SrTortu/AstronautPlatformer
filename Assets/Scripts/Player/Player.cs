@@ -24,7 +24,6 @@ public class Player : MonoBehaviour
 	private Animator _anim;
 	private Rigidbody2D _targetRB;
 	public GunController PlayerGun;
-	public Transform PlayerSprite;
 	public bool isOnGround;
 
    
@@ -35,16 +34,13 @@ public class Player : MonoBehaviour
 	{
 		_anim = GetComponent<Animator>();
 		_targetRB = GetComponent<Rigidbody2D>();
-		PlayerSprite = GetComponent<Transform>();
 		PlayerGun = GetComponentInChildren<GunController>();
-		
-		
 		
 	}
 
 	public void Walk(Direction walkDirection)
 	{
-		if (_jetpack.Flying)
+		if (_jetpack.Flying) //Si esta volando no puede volar
 			return;
 		if (walkDirection == Direction.Left)
 			_targetRB.AddForce(Vector2.left * _moveSpeed, ForceMode2D.Impulse);
@@ -63,7 +59,7 @@ public class Player : MonoBehaviour
 	{
 		_walking = false;
 	}
-	public void Flip(Direction direction)
+	public void Flip(Direction direction) //Hace que el player cambie visualmente de direccion
     {
 		
 		Vector3 scale = transform.localScale;

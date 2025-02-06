@@ -4,20 +4,20 @@ using UnityEngine;
 
 public class HookTrigger : MonoBehaviour
 {
-    // Start is called before the first frame update
+    
     [SerializeField]private LayerMask platformLayer;
     [SerializeField]private Rigidbody2D _playerRB;
-    [SerializeField]private float _hookSpeed;
+    [SerializeField]private float _hookStrengh;
     [SerializeField]private float _hookMaxDistance;
     public LineRenderer hookLine;
-    private PlatFormDissapears _platFormDissapears;
-    private Vector3 _hookPoint;
+    private PlatFormDissapear _platFormDissapear;
     private Transform _initialHookPosition;
-    private Vector3 direction;
-    private Vector3 _moveDirection;
+    private Vector2 _relativePosition;
+    private Vector3 _hookPoint;
+    private Vector3 _hookDirection;
+    private Transform _hookedPlatform;
     private RaycastHit2D _hit;
-    private RaycastHit2D _hitTemp; // Temporal para detectar si el punto de enganche se ha desaparecido
-    private float _hookSpeedAlter;
+    private float _hookStrenghAlter;
     private bool isSpecial;
     private bool isHooked;
    
@@ -33,41 +33,53 @@ public class HookTrigger : MonoBehaviour
 
     public void launchHook(Vector3 mousePosition)
     {
-        Debug.Log("mouse button");
         _initialHookPosition = this.transform;
-        direction = mousePosition - this.transform.position;
-        _hit = launchHit(_initialHookPosition);
-        
+        _hookDirection = mousePosition - this.transform.position;
+        _hit = launchHit(_initialHookPosition);   
 
         if (_hit.collider != null) // Si golpea una plataforma
         {
+            _hookedPlatform = _hit.collider.transform;
+            _relativePosition = _hit.point - (Vector2)_hookedPlatform.position;
             _hookPoint = _hit.point;
             isHooked = true;
-
-            //// Dibujar la cuerda
+            GameObject point = new GameObject("NewHookPoint");
+            point.transform.position = _hit.point;
+            _hookPoint = point.transform.position;
+            // Dibujar la cuerda
             hookLine.enabled = true;
-            hookLine.SetPosition(0, this.transform.position);
-            hookLine.SetPosition(1, _hookPoint);
-            isSpecial = _hit.collider.gameObject.TryGetComponent<PlatFormDissapears>(out _platFormDissapears);
+            //Captura el script de la plataforma golpeada para corregir interacciones 
+            isSpecial = _hit.collider.gameObject.TryGetComponent<PlatFormDissapear>(out _platFormDissapear);
         }
     }
     public void MoveTowardsHook()
     {
 
-        _moveDirection = getHookDirection();
-        if (_hookSpeed == 0)
-            _hookSpeed = _hookSpeedAlter;
-        _playerRB.AddForce(_moveDirection * _hookSpeed, ForceMode2D.Force);
+        _hookDirection = getHookDirection();
+        //Evita que el player se quede quieto al estar enganchado
+        if (_hookStrengh == 0)
+            _hookStrengh = _hookStrenghAlter;
+        _playerRB.AddForce(_hookDirection * _hookStrengh, ForceMode2D.Force);
+        //Reduce la la aplicaciond de fuerza en caso de que la altura del player supere la plataforma
         if (this.transform.position.y > _hookPoint.y)
         {
-            _hookSpeedAlter = _hookSpeed;
-            _hookSpeed = 0;
+            _hookStrenghAlter = _hookStrengh;
+            _hookStrengh = 0;
         }
 
 
 
 
 
+    }
+
+    private void updateHook ()
+    {
+        if (_hookedPlatform != null && _hookPoint !=null)
+        {
+            _hookPoint = (Vector2)_hookedPlatform.position + _relativePosition;
+            
+        }
     }
     private Vector3 getHookDirection ()
     {
@@ -77,7 +89,7 @@ public class HookTrigger : MonoBehaviour
 
     private RaycastHit2D launchHit (Transform initialPosition)
     {
-        RaycastHit2D hit = Physics2D.Raycast(initialPosition.position, direction, _hookMaxDistance, platformLayer);
+        RaycastHit2D hit = Physics2D.Raycast(initialPosition.position, _hookDirection, _hookMaxDistance, platformLayer);
         return hit;
     }
     
@@ -88,13 +100,18 @@ public class HookTrigger : MonoBehaviour
     }
     private void Update()
     {
-        if(isSpecial)
+        if(isSpecial) //Verifica si la plataforma tiene algun comportamiento especial
         {
-            if(_platFormDissapears.isHide)
+            if(_platFormDissapear.isHide)// Si la plataforma se hace invisible se retira el gancho
             DetachHook();
         }
         if (isHooked)
+        {
             MoveTowardsHook();
+            updateHook();    
+
+        }
+
 
         // Update rope
 

@@ -32,6 +32,7 @@ public class InGameController : MonoBehaviour
 
 
     #endregion
+    // Si el player esta sobre la plataforma le permite pararse
     public void PlayerEnteredPlatformTrigger(PlataformColisionController platform, Collider2D player)
     {
        
@@ -41,7 +42,7 @@ public class InGameController : MonoBehaviour
            
         }
     }
-
+    // Si el player esta por debajo de la plataforma le permite ignorar la colision
     public void PlayerExitedPlatformTrigger(PlataformColisionController platform, Collider2D player)
     {
         

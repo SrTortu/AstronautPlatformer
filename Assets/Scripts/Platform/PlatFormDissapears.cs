@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine.Rendering.Universal;
 using UnityEngine;
 
-public class PlatFormDissapears : MonoBehaviour
+public class PlatFormDissapear : MonoBehaviour
 {
     public bool isActive;
     public bool isHide;
@@ -16,7 +16,7 @@ public class PlatFormDissapears : MonoBehaviour
     // Update is called once per frame
     private void Start()
     {
-        _platformColliders = GetComponents<Collider2D>();
+        _platformColliders = GetComponents<Collider2D>(); 
         _platformSprite = this.GetComponent<SpriteRenderer>();
         _platformLight = GetComponent<Light2D>();
         isActive = false;
@@ -26,7 +26,7 @@ public class PlatFormDissapears : MonoBehaviour
     }
     void Update()
     {
-      if(!_corrutineIsOn)
+      if(!_corrutineIsOn) //se verifica que no se ejecuten corrutinas inesperadas
         {
             StartCoroutine(MakeInvisible());
         }
@@ -34,11 +34,11 @@ public class PlatFormDissapears : MonoBehaviour
     IEnumerator MakeInvisible()
     {
         _corrutineIsOn = true;
-        while (isActive)
+        while (isActive) // se verifica que se pueda activar la corrutina en caso de que el player este cerca 
         {
             Debug.Log("Trabajando");
             yield return new WaitForSeconds(Random.Range(3f,6f));
-            foreach (Collider2D i in _platformColliders)
+            foreach (Collider2D i in _platformColliders) // Se apagan los colliders de la plataforma
             {
                 i.enabled = false;
             }
