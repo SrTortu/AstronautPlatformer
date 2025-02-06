@@ -43,9 +43,7 @@ public class HookTrigger : MonoBehaviour
             _relativePosition = _hit.point - (Vector2)_hookedPlatform.position;
             _hookPoint = _hit.point;
             isHooked = true;
-            GameObject point = new GameObject("NewHookPoint");
-            point.transform.position = _hit.point;
-            _hookPoint = point.transform.position;
+            _hookPoint = _hit.point;
             // Dibujar la cuerda
             hookLine.enabled = true;
             //Captura el script de la plataforma golpeada para corregir interacciones 

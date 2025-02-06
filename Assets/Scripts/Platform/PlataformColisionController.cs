@@ -10,13 +10,14 @@ public class PlataformColisionController : MonoBehaviour
     private Collider2D platformCollider;
     private PlatFormDissapear _platFormDissapear;
     private bool _isInvisible;
-    private bool _isWalker;
+   
 
     
     private void Awake()
     {
         platformCollider = GetComponent<Collider2D>();
         _isInvisible = TryGetComponent<PlatFormDissapear>(out _platFormDissapear);
+      
     }
     void OnTriggerEnter2D(Collider2D collision)
     {
