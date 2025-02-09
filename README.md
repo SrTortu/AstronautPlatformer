@@ -2,7 +2,8 @@
 
 Change Log:
 
-Player
+Player: 
+
 	*Ahora el jugador puede atravezar plataformas desde abajo
 	* Ahora el jugador puede correr ( usando las teclas de movimiento)
 	* Se cambia "Volar" por "saltar" (tecla space)
@@ -19,6 +20,7 @@ Pistola: lanza un gancho (click izquierdo) el cual se sujetara de una plataforma
 	* Click derecho elimina el gancho (no tiene utilidad)
 	* Si la plataforma desaparece el gancho tambien
 	* Si la plataforma se mueve el gancho mantendra su posicion sobre la plataforma
+ 	* Se añade sonido de disparo	
 
 Plataformas: se añaden plataformas especiales (Nivel 3, 4 y 5)
 	
