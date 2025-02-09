@@ -28,12 +28,14 @@ Plataformas: se añaden plataformas especiales (Nivel 3, 4 y 5)
 		 sin que el movimiento del player se vea afectado
 	*Las plataformas del nivel 5 tambien se mueven pero tienen un material especifico con poca friccion.
 
-Escenario
+Escenario: 
+
 	*Se añaden luces a los niveles 
 	*Se cambia la musica de "InGame" (Ahora corresponde a "Inner station" de Metal Slug)
 	*Se añade musica de intro al Main Menu
-Items
-	*Se cambian todos los items y su funcionalidad, Sprite, particulas y sonidos
+ 
+Items: Se cambian todos los items y su funcionalidad, Sprite, particulas y sonidos
+	
 		-Item Bomba: Hace que el jugador tenga un impulso negativo en el eje Y. Y tambien paraliza al player por 1seg
 			     ademas, si el jugador se encuentra enganchado a una plataforma se eliminara el gancho
 		-Item skull: Disminiye el ratio de regeneracion de energia en -0.1. Tambien paraliza al jugador	1seg.
