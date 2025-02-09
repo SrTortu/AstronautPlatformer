@@ -96,7 +96,7 @@ public class HookTrigger : MonoBehaviour
         isHooked = false;
         hookLine.enabled = false; // Ocultar la cuerda
     }
-    private void Update()
+    private void FixedUpdate()
     {
         if(isSpecial) //Verifica si la plataforma tiene algun comportamiento especial
         {

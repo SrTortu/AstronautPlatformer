@@ -15,7 +15,7 @@ public class PlatformMobile : MonoBehaviour
         _pointA = new Vector2(-5, this.transform.position.y);
         _pointB = new Vector2(6, this.transform.position.y);
         _isActive = false;
-        target = _pointA;
+        target = (Random.Range(0, 2) == 0) ? _pointA : _pointB;
     }
 
     // Update is called once per frame
@@ -34,17 +34,22 @@ public class PlatformMobile : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-       
-        if (collision.gameObject.CompareTag("Player"))
+       if(this.CompareTag("EarthPlatform"))
         {
-            collision.transform.SetParent(this.transform);
+            if (collision.gameObject.CompareTag("Player"))
+            {
+                collision.transform.SetParent(this.transform);
+            }
         }
     }
     private void OnCollisionExit2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (this.CompareTag("EarthPlatform"))
         {
-            collision.transform.SetParent(null);
+            if (collision.gameObject.CompareTag("Player"))
+            {
+                collision.transform.SetParent(null);
+            }
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)

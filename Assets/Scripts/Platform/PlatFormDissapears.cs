@@ -37,7 +37,7 @@ public class PlatFormDissapear : MonoBehaviour
         while (isActive) // se verifica que se pueda activar la corrutina en caso de que el player este cerca 
         {
             Debug.Log("Trabajando");
-            yield return new WaitForSeconds(Random.Range(3f,6f));
+            yield return new WaitForSeconds(Random.Range(3.7f,6.5f)); //Tiempo que toma en desaparecer
             foreach (Collider2D i in _platformColliders) // Se apagan los colliders de la plataforma
             {
                 i.enabled = false;
@@ -45,7 +45,7 @@ public class PlatFormDissapear : MonoBehaviour
             _platformSprite.enabled = false;
             _platformLight.enabled = false;
             isHide = true;
-            yield return new WaitForSeconds(Random.Range(1f,2f));
+            yield return new WaitForSeconds(Random.Range(1f,1.7f)); //tiempo que toma en volver a aparecer
             foreach (Collider2D i in _platformColliders)
             {
                 i.enabled = true;

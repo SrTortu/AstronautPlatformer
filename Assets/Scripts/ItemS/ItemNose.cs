@@ -4,7 +4,7 @@ using System;
 public class ItemNose : Item
 {
 
-	const float NOSE_DAMAGE = -20;
+	const float NOSE_DAMAGE = -0.1f;
 
 	#region Unity Callbacks
 	private void OnCollisionEnter2D(Collision2D collision)
@@ -15,7 +15,7 @@ public class ItemNose : Item
 		if (collision.gameObject.tag == "Player")
 		{
 			Jetpack jetpack = collision.gameObject.GetComponent<Jetpack>();			
-			jetpack.AddEnergy(NOSE_DAMAGE);
+			jetpack.AddRegRatio(NOSE_DAMAGE);
 			Recolected();
 		}
 	}

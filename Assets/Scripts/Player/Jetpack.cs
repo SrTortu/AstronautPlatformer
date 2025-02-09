@@ -74,9 +74,9 @@ public class Jetpack : MonoBehaviour
 		Energy += _energyRegenerationRatio;
 	}
 
-	public void AddEnergy(float energy)
+	public void AddRegRatio(float energy)
 	{
-		Energy += energy;
+		_energyRegenerationRatio += energy;
 	}
 
 	public void FlyHorizontal(Direction flyDirection)
