@@ -33,7 +33,7 @@ Escenario:
 
 	*Se añaden luces a los niveles 
 	*Se cambia la musica de "InGame" (Ahora corresponde a "Inner station" de Metal Slug)
-	*Se añade musica de intro al Main Menu
+	*Se añade musica de intro al Main Menu (Intro de Contra)
  
 Items: Se cambian todos los items y su funcionalidad, Sprite, particulas y sonidos
 	
