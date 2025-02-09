@@ -34,7 +34,9 @@ public class Jetpack : MonoBehaviour
 	[SerializeField] private float _energyRegenerationRatio;
 	[SerializeField] private float _horizontalForce;
 	[SerializeField] private float _jumForce;
-	
+	[SerializeField] private AudioSource _audioSource;
+	[SerializeField] private AudioClip _audioClip;
+
 
 	#endregion
 
@@ -100,11 +102,17 @@ public class Jetpack : MonoBehaviour
 		{
 			_targetRB.AddForce(Vector2.up * _jumForce, ForceMode2D.Impulse);
 			Energy -= _energyFlyingRatio;
+			makeSound();
 		}
 		else
 			Flying = false;
 		
 	}
+
+	private void makeSound ()
+    {
+		_audioSource.PlayOneShot(_audioClip);
+    }
 	#endregion
 }
 

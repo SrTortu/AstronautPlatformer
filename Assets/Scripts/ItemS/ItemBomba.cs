@@ -16,10 +16,12 @@ public class ItemError : Item
 		{
 			Jetpack jetpack = collision.gameObject.GetComponent<Jetpack>();
 			//Efecto
-			if (jetpack.Flying)
-				jetpack.GetComponent<Rigidbody2D>().AddForce(Vector2.down * ERROR_FORCE);
-			else
-				if (jetpack.transform.position.y > 1)//Para evitar que nos unda en el suelo
+			jetpack.GetComponent<Rigidbody2D>().AddForce(Vector2.down * ERROR_FORCE);
+			Player player = collision.gameObject.GetComponent<Player>();
+			player.DagameOn();
+			player.PlayerGun.DetachHook();
+
+			if (jetpack.transform.position.y > 1)//Para evitar que nos unda en el suelo
 					jetpack.transform.Translate(Vector2.down * ERROR_DOWN_POS);
 			
 			Recolected();

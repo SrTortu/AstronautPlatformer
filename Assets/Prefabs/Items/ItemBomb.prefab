@@ -78,7 +78,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7270445913172318630, guid: ae9890d08afd0484fb01105e534cffda, type: 3}
       propertyPath: m_Name
-      value: ItemErrorCode
+      value: ItemBomb
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -145,9 +145,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0032979846, y: 0}
+  m_Offset: {x: -0.0032979846, y: 0.49847507}
   serializedVersion: 2
-  m_Radius: 0.37678283
+  m_Radius: 0.37888622
 --- !u!114 &8392356006041933992
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -182,8 +182,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.00909999, y: 0.48425, z: 0}
-    m_Extent: {x: 0.5286, y: 0.51815003, z: 0}
+    m_Center: {x: -0.017849982, y: 0.48365, z: 0}
+    m_Extent: {x: 0.53335, y: 0.51445, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0

@@ -10,6 +10,7 @@ public class HookTrigger : MonoBehaviour
     [SerializeField]private float _hookStrengh;
     [SerializeField]private float _hookMaxDistance;
     public LineRenderer hookLine;
+    public bool isHooked;
     private PlatFormDissapear _platFormDissapear;
     private Transform _initialHookPosition;
     private Vector2 _relativePosition;
@@ -19,7 +20,6 @@ public class HookTrigger : MonoBehaviour
     private RaycastHit2D _hit;
     private float _hookStrenghAlter;
     private bool isSpecial;
-    private bool isHooked;
    
     void Start()
     {

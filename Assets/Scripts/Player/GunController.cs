@@ -6,6 +6,8 @@ public class GunController : MonoBehaviour
 {
     [SerializeField]private Transform shootPoint;
     [SerializeField] private HookTrigger _hookTrigger;
+    [SerializeField] private AudioSource _audioSource;
+    [SerializeField] private AudioClip _audioClip;
     private void Start()
     {
         shootPoint = transform.Find("shoot_point");
@@ -40,8 +42,11 @@ public class GunController : MonoBehaviour
     }
     public void shoot (Vector3 MousePosition)
     {
-        
         _hookTrigger.launchHook(MousePosition);
+
+        if(_hookTrigger.isHooked)
+            _audioSource.PlayOneShot(_audioClip);
+        
         
     }
     public void DetachHook ()

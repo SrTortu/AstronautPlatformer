@@ -27,7 +27,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.75, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6685567563116966079}
@@ -204,10 +204,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8235e11fca7821a489afd89dfeed4ebe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _minSpawnTime: 0.5
+  _minSpawnTime: 3
   _maxSpawnTime: 5
   _spawnList:
-  - {fileID: 3218749832088726973, guid: 82dc7cf44a9fae54da2443fb964e5f6c, type: 3}
   - {fileID: 7735931051061406845, guid: d5cc5e5a562cc1f479bcf5715081261d, type: 3}
   - {fileID: 2324394078615961691, guid: a5573acdc160f644fb7dc5eda1fd7932, type: 3}
   - {fileID: 2784046645514791758, guid: f113de9e1230f0941b00b4f471773ed8, type: 3}
@@ -258,7 +257,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.08235294, g: 0.06666667, b: 0.13725491, a: 1}
+  m_BackGroundColor: {r: 0.019607844, g: 0.007843138, b: 0.050980397, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
