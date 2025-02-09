@@ -1,5 +1,7 @@
 using UnityEngine;
 using System;
+using UnityEngine.Rendering.Universal;
+using System.Collections;
 
 [RequireComponent(typeof(Animator))]
 [RequireComponent(typeof(Rigidbody2D))]
@@ -25,6 +27,7 @@ public class Player : MonoBehaviour
 	private Rigidbody2D _targetRB;
 	public GunController PlayerGun;
 	public bool isOnGround;
+	public bool isDamage;
 
    
     #endregion
@@ -32,6 +35,7 @@ public class Player : MonoBehaviour
     #region Unity Callbacks
     private void Awake()
 	{
+		isDamage = false;
 		_anim = GetComponent<Animator>();
 		_targetRB = GetComponent<Rigidbody2D>();
 		PlayerGun = GetComponentInChildren<GunController>();
@@ -59,6 +63,11 @@ public class Player : MonoBehaviour
 	{
 		_walking = false;
 	}
+	public void DagameOn ()
+    {
+		StartCoroutine (MakeDamage());
+    }
+	
 	public void Flip(Direction direction) //Hace que el player cambie visualmente de direccion
     {
 		
@@ -80,11 +89,18 @@ public class Player : MonoBehaviour
 		
 		PlayerGun.shoot(mouseDirection);
 	}
+	IEnumerator MakeDamage ()
+    {
+		isDamage = true;
+		yield return new WaitForSeconds(1f);
+		isDamage = false;
+    }
 	// Update is called once per frame
 	void Update()
     {
 		_anim.SetBool("Flying", _jetpack.Flying);
 		_anim.SetBool("Walking", _walking);
+		_anim.SetBool("Damage", isDamage);
     }
 	#endregion
 

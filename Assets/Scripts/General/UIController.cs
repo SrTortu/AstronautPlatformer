@@ -10,6 +10,7 @@ public class UIController : MonoBehaviour
 
 	#region Fields
 	[SerializeField] private Jetpack _jetpack;
+	[SerializeField] private Player _player;
 	[SerializeField] private Slider _energySlider;
 	[SerializeField] private TextMeshProUGUI _textSlider;
 	[SerializeField] private TextMeshProUGUI _energyAlert;
@@ -23,6 +24,7 @@ public class UIController : MonoBehaviour
     private void Start()
     {
 		_audioSource = GetComponent<AudioSource>();
+
     }
  
     void Update()
@@ -30,7 +32,8 @@ public class UIController : MonoBehaviour
 		_energySlider.value = _jetpack.Energy;
 		_textSlider.text = ((int)_jetpack.transform.position.y).ToString();
 
-		if(!_jetpack.Flying && Input.GetKeyDown(KeyCode.Space)) //Si se presiona la tecla space y el player no logra volar implica que no tiene energia
+			//Si se presiona la tecla space y el player no puede volar a pesar no estar dañado, significa que no tiene energia
+		if(!_jetpack.Flying &&  !_player.isDamage && Input.GetKeyDown(KeyCode.Space)) 
         {
 			_audioSource.PlayOneShot(_noEnergySound);
 			StartCoroutine(ShowAlert());
