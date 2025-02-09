@@ -26,8 +26,7 @@ Plataformas: se añaden plataformas especiales (Nivel 3, 4 y 5)
 	
 	*Las plataformas del nivel 3 desaparecen cada cierto tiempo y vuelven a aparecer (intervalo aleatorio)
 	*Las plataformas del nivel 4 se mueven en el eje X de un punto A a un punto B
-		-Se añade la posibilidad de pararse sobre las plataformas de nivel 4
-		 sin que el movimiento del player se vea afectado
+		-Se añade la posibilidad de pararse sobre las plataformas de nivel 4 y que el player se mueva con la plataforma
 	*Las plataformas del nivel 5 tambien se mueven pero tienen un material especifico con poca friccion.
 
 Escenario: 
