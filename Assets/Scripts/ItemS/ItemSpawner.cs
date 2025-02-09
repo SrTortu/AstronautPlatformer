@@ -64,7 +64,7 @@ public class ItemSpawner : MonoBehaviour
 
 		//Dificulty Progression
 		if (_maxSpawnTime > _minSpawnTime)
-			_maxSpawnTime -= 0.1f;
+			_maxSpawnTime -= 0.03f;
 	}
 	#endregion
 }
