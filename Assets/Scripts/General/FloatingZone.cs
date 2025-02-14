@@ -7,8 +7,8 @@ public class FloatingZone : MonoBehaviour
     #region Fields
 
     [SerializeField] private float floatingForce;
+    [SerializeField] private ItemSpawner spawner;
     private Rigidbody2D _playerRB;
-    private ItemSpawner spawner;
 
     #endregion
 
@@ -19,7 +19,7 @@ public class FloatingZone : MonoBehaviour
         floatingForce = 19000;
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         if (_playerRB != null)
         {
@@ -32,11 +32,7 @@ public class FloatingZone : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             _playerRB = collision.gameObject.GetComponent<Rigidbody2D>();
-            if (spawner != null)
-            {
-                spawner = FindObjectOfType<ItemSpawner>();
-                spawner.enabled = false;
-            }
+            spawner.enabled = false;
         }
     }
 
