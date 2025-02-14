@@ -8,13 +8,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1484895048732692684, guid: ae9890d08afd0484fb01105e534cffda, type: 3}
+      propertyPath: m_GravityScale
+      value: 0.7
+      objectReference: {fileID: 0}
     - target: {fileID: 2941314405805544057, guid: ae9890d08afd0484fb01105e534cffda, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2941314405805544057, guid: ae9890d08afd0484fb01105e534cffda, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2941314405805544057, guid: ae9890d08afd0484fb01105e534cffda, type: 3}
       propertyPath: m_LocalPosition.x
@@ -78,7 +82,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7270445913172318630, guid: ae9890d08afd0484fb01105e534cffda, type: 3}
       propertyPath: m_Name
-      value: ItemMotivation
+      value: ItemWater
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

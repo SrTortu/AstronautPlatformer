@@ -8,21 +8,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1484895048732692684, guid: ae9890d08afd0484fb01105e534cffda, type: 3}
+      propertyPath: m_GravityScale
+      value: 0.7
+      objectReference: {fileID: 0}
     - target: {fileID: 2941314405805544057, guid: ae9890d08afd0484fb01105e534cffda, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 2941314405805544057, guid: ae9890d08afd0484fb01105e534cffda, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 2941314405805544057, guid: ae9890d08afd0484fb01105e534cffda, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.45
+      value: 2.000705
       objectReference: {fileID: 0}
     - target: {fileID: 2941314405805544057, guid: ae9890d08afd0484fb01105e534cffda, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 19.94
+      value: 1.4760135
       objectReference: {fileID: 0}
     - target: {fileID: 2941314405805544057, guid: ae9890d08afd0484fb01105e534cffda, type: 3}
       propertyPath: m_LocalPosition.z
@@ -182,8 +186,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.017849982, y: 0.48365, z: 0}
-    m_Extent: {x: 0.53335, y: 0.51445, z: 0}
+    m_Center: {x: -0.01275, y: 0.48040003, z: 0}
+    m_Extent: {x: 0.53005004, y: 0.5072, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
