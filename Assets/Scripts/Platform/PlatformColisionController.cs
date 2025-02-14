@@ -3,10 +3,25 @@ using UnityEngine;
 [RequireComponent(typeof(Collider2D))]
 public class PlatformColisionController : MonoBehaviour
 {
+    #region Properties
+
+    public Collider2D PlatformCollider
+    {
+        get { return _platformCollider; }
+        set { _platformCollider = value; }
+    }
+
+    #endregion
+
+    #region Fields
+
     private Collider2D _platformCollider;
     private PlatFormDissapear _platFormDissapear;
     private bool _isInvisible;
 
+    #endregion
+
+    #region Unity Callbacks
 
     private void Awake()
     {
@@ -17,16 +32,14 @@ public class PlatformColisionController : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        //Si la posicion Y de player es superior a la de la plataforma le permite pararse sobre ella
         if (collision.CompareTag("Player"))
         {
             InGameController.InstanceController.PlayerEnteredPlatformTrigger(this, collision);
         }
 
-        //verifica que la plataforma tenga dispoible el script para desaparecer 
+
         if (_isInvisible)
         {
-            //Si el jugador se encuentra cerca a la plataforma esta activa su evento especial
             if (collision.CompareTag("PlayerChunk"))
             {
                 _platFormDissapear.isActive = true;
@@ -36,7 +49,6 @@ public class PlatformColisionController : MonoBehaviour
 
     void OnTriggerExit2D(Collider2D collision)
     {
-        //Si la posicion Y de player es inferior a la de la plataforma le permite atravezarla
         if (collision.CompareTag("Player"))
         {
             InGameController.InstanceController.PlayerExitedPlatformTrigger(this, collision);
@@ -44,7 +56,6 @@ public class PlatformColisionController : MonoBehaviour
 
         if (_isInvisible)
         {
-            //Si el jugador se encuentra lejos a la plataforma esta desactiva su evento especial
             if (collision.CompareTag("PlayerChunk"))
             {
                 _platFormDissapear.isActive = false;
@@ -52,9 +63,5 @@ public class PlatformColisionController : MonoBehaviour
         }
     }
 
-    public Collider2D PlatformCollider
-    {
-        get { return _platformCollider; }
-        set { _platformCollider = value; }
-    }
+    #endregion
 }

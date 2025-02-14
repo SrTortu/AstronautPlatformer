@@ -2,14 +2,24 @@ using UnityEngine;
 
 public class GunController : MonoBehaviour
 {
+    #region Fields
+
     [SerializeField] private HookTrigger _hookTrigger;
     [SerializeField] private AudioSource _audioSource;
     [SerializeField] private AudioClip _audioClip;
+
+    #endregion
+
+    #region Unity Callbacks
 
     private void Start()
     {
         _hookTrigger = GetComponentInChildren<HookTrigger>();
     }
+
+    #endregion
+
+    #region Public Methods
 
     public void Aim(Vector3 mousePosition)
     {
@@ -28,7 +38,7 @@ public class GunController : MonoBehaviour
 
     public void Shoot(Vector3 mousePosition)
     {
-        _hookTrigger.launchHook(mousePosition);
+        _hookTrigger.LaunchHook(mousePosition);
 
         if (_hookTrigger.isHooked)
             _audioSource.PlayOneShot(_audioClip);
@@ -38,4 +48,6 @@ public class GunController : MonoBehaviour
     {
         _hookTrigger.DetachHook();
     }
+
+    #endregion
 }

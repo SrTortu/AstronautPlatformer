@@ -4,116 +4,113 @@ using System;
 [RequireComponent(typeof(Rigidbody2D))]
 public class Jetpack : MonoBehaviour
 {
-	public enum Direction
-	{
-		Left,
-		Right
-	}
-
-	#region Properties
-	public float Energy 
-	{
-		get
-		{
-			return _energy;
-		}
-		set
-		{
-			_energy = Mathf.Clamp(value,0,_maxEnergy);
-		}
-	}
-	public bool Flying { get; set; }
-	
-	#endregion
-
-	#region Fields							     
-	private Rigidbody2D _targetRB;
-	[SerializeField] private float _energy;
-	[SerializeField] private float _maxEnergy;
-	[SerializeField] private float _energyFlyingRatio;
-	[SerializeField] private float _energyRegenerationRatio;
-	[SerializeField] private float _horizontalForce;
-	[SerializeField] private float _jumForce;
-	[SerializeField] private AudioSource _audioSource;
-	[SerializeField] private AudioClip _audioClip;
-
-
-	#endregion
-
-	#region Unity Callbacks
-	private void Awake()
-	{
-		_targetRB = GetComponent<Rigidbody2D>();
-	}
-	// Start is called before the first frame update
-	void Start()
-	{
-		Energy = _maxEnergy;
-	}
-
-	// Update is called once per physic frame
-	void FixedUpdate()
-	{
-		
-			Regenerate();
-	}
-
-	#endregion
-
-	#region Public Methods
-	public void FlyUp()
-	{
-		Flying = true;
-		DoFly();
-	}
-	public void StopFlying()
-	{
-		Flying = false;
-	}
-
-	public void Regenerate()
-	{		
-		Energy += _energyRegenerationRatio;
-	}
-
-	public void AddRegRatio(float energy)
-	{
-		_energyRegenerationRatio += energy;
-	}
-
-	public void FlyHorizontal(Direction flyDirection)
-	{
-		if (!Flying)
-			return;
-
-		if (flyDirection == Direction.Left)
-			_targetRB.AddForce(Vector2.left * _horizontalForce);
-		else
-			_targetRB.AddForce(Vector2.right * _horizontalForce);
-
-	}
-
-	#endregion
-
-	#region Private Methods
-	private void DoFly()
-	{
-		if (Energy > _energyFlyingRatio-1)
-		{
-			_targetRB.AddForce(Vector2.up * _jumForce, ForceMode2D.Impulse);
-			Energy -= _energyFlyingRatio;
-			makeSound();
-		}
-		else
-			Flying = false;
-		
-	}
-
-	private void makeSound ()
+    public enum Direction
     {
-		_audioSource.PlayOneShot(_audioClip);
+        Left,
+        Right
     }
-	#endregion
+
+    #region Properties
+
+    public float Energy
+    {
+        get { return _energy; }
+        set { _energy = Mathf.Clamp(value, 0, _maxEnergy); }
+    }
+
+    public bool Flying { get; set; }
+
+    #endregion
+
+    #region Fields
+
+    [SerializeField] private float _energy;
+    [SerializeField] private float _maxEnergy;
+    [SerializeField] private float _energyFlyingRatio;
+    [SerializeField] private float _energyRegenerationRatio;
+    [SerializeField] private float _horizontalForce;
+    [SerializeField] private float _jumForce;
+    [SerializeField] private AudioSource _audioSource;
+    [SerializeField] private AudioClip _audioClip;
+    private Rigidbody2D _targetRB;
+
+    #endregion
+
+    #region Unity Callbacks
+
+    private void Awake()
+    {
+        _targetRB = GetComponent<Rigidbody2D>();
+    }
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        Energy = _maxEnergy;
+    }
+
+    // Update is called once per physic frame
+    void FixedUpdate()
+    {
+        Regenerate();
+    }
+
+    #endregion
+
+    #region Public Methods
+
+    public void FlyUp()
+    {
+        Flying = true;
+        DoFly();
+    }
+
+    public void StopFlying()
+    {
+        Flying = false;
+    }
+
+    public void Regenerate()
+    {
+        Energy += _energyRegenerationRatio;
+    }
+
+    public void AddRegRatio(float energy)
+    {
+        _energyRegenerationRatio += energy;
+    }
+
+    public void FlyHorizontal(Direction flyDirection)
+    {
+        if (!Flying)
+            return;
+
+        if (flyDirection == Direction.Left)
+            _targetRB.AddForce(Vector2.left * _horizontalForce);
+        else
+            _targetRB.AddForce(Vector2.right * _horizontalForce);
+    }
+
+    #endregion
+
+    #region Private Methods
+
+    private void DoFly()
+    {
+        if (Energy > _energyFlyingRatio - 1)
+        {
+            _targetRB.AddForce(Vector2.up * _jumForce, ForceMode2D.Impulse);
+            Energy -= _energyFlyingRatio;
+            PlaySound();
+        }
+        else
+            Flying = false;
+    }
+
+    private void PlaySound()
+    {
+        _audioSource.PlayOneShot(_audioClip);
+    }
+
+    #endregion
 }
-
-

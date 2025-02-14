@@ -1,31 +1,43 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.Serialization;
 
 [RequireComponent(typeof(Animator))]
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(SpriteRenderer))]
 public class Player : MonoBehaviour
 {
+    #region Enum
+
     public enum Direction
     {
         Left,
         Right
     }
 
+    #endregion
+
+    #region Fields
+
     [SerializeField] private Jetpack _jetpack;
     [SerializeField] private float _moveSpeed;
+
     private Animator _anim;
     private Rigidbody2D _targetRB;
-    public GunController PlayerGun;
-    public bool isDamage;
     private bool _isWalking;
+
+    public GunController playerGun;
+    public bool isDamage;
+
+    #endregion
+
+    #region Unity Callbacks
 
     private void Awake()
     {
         isDamage = false;
         _anim = GetComponent<Animator>();
         _targetRB = GetComponent<Rigidbody2D>();
-        PlayerGun = GetComponentInChildren<GunController>();
     }
 
     void Update()
@@ -35,12 +47,22 @@ public class Player : MonoBehaviour
         _anim.SetBool("Damage", isDamage);
     }
 
+    #endregion
+
+    #region Public Methods
+
     public void Walk(Direction walkDirection)
     {
-        if (_jetpack.Flying) //Si esta volando no puede volar
+        if (_jetpack.Flying)
+        {
             return;
+        }
+
         if (walkDirection == Direction.Left)
+        {
             _targetRB.AddForce(Vector2.left * _moveSpeed, ForceMode2D.Impulse);
+        }
+
         if (walkDirection == Direction.Right)
         {
             _targetRB.AddForce(Vector2.right * _moveSpeed, ForceMode2D.Impulse);
@@ -57,12 +79,12 @@ public class Player : MonoBehaviour
         _isWalking = false;
     }
 
-    public void DagameOn()
+    public void DamageOn()
     {
-        StartCoroutine(MakeDamage());
+        StartCoroutine(GetDamage());
     }
 
-    public void Flip(Direction direction) //Hace que el player cambie visualmente de direccion
+    public void FlipPlayer(Direction direction)
     {
         Vector3 scale = transform.localScale;
         if (direction == Direction.Left)
@@ -79,13 +101,19 @@ public class Player : MonoBehaviour
 
     public void Shoot(Vector3 mouseDirection)
     {
-        PlayerGun.Shoot(mouseDirection);
+        playerGun.Shoot(mouseDirection);
     }
 
-    IEnumerator MakeDamage()
+    #endregion
+
+    #region Private Methods
+
+    IEnumerator GetDamage()
     {
         isDamage = true;
         yield return new WaitForSeconds(1f);
         isDamage = false;
     }
+
+    #endregion
 }

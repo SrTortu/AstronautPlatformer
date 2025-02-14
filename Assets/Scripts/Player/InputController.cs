@@ -3,107 +3,105 @@ using System;
 
 public class InputController : MonoBehaviour
 {
-	#region Properties
-	#endregion
+    #region Fields
 
-	#region Fields
-	[SerializeField] private Jetpack _jetpack;
-	[SerializeField] private Player _player;
-	private Vector3 mousePosition;
-	#endregion
+    [SerializeField] private Jetpack _jetpack;
+    [SerializeField] private Player _player;
+    private Vector3 mousePosition;
 
-	#region Unity Callbacks
-	// Start is called before the first frame update
-	void Start()
+    #endregion
+
+    #region Unity Callbacks
+
+    void Start()
     {
-        
     }
 
-    // Update is called once per frame
-	
+
     void Update()
     {
-		if(!_player.isDamage)
+        if (!_player.isDamage)
         {
-			//Horizontal Fly
-			if (Input.GetAxis("Horizontal") < 0)
-			{
-				_player.Flip(Player.Direction.Left);
-				_jetpack.FlyHorizontal(Jetpack.Direction.Left);
-			}
-			if (Input.GetAxis("Horizontal") > 0)
-			{
-				_player.Flip(Player.Direction.Right);
-				_jetpack.FlyHorizontal(Jetpack.Direction.Right);
-			}
+            //Horizontal Fly
+            if (Input.GetAxis("Horizontal") < 0)
+            {
+                _player.FlipPlayer(Player.Direction.Left);
+                _jetpack.FlyHorizontal(Jetpack.Direction.Left);
+            }
 
-			//Vertical Fly
-			if (Input.GetKeyDown(KeyCode.Space))
-			{
-				_jetpack.FlyUp();
-				_player.PlayerGun.DetachHook();
-			}
-			else
-			{
-				_jetpack.StopFlying();
-			}
+            if (Input.GetAxis("Horizontal") > 0)
+            {
+                _player.FlipPlayer(Player.Direction.Right);
+                _jetpack.FlyHorizontal(Jetpack.Direction.Right);
+            }
+
+            //Vertical Fly
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                _jetpack.FlyUp();
+                _player.playerGun.DetachHook();
+            }
+            else
+            {
+                _jetpack.StopFlying();
+            }
 
 
+            //Aim
+            mousePosition =
+                Camera.main.ScreenToWorldPoint(Input.mousePosition); //Captura la posicion del mouse en el juego
+            if (mousePosition.x >
+                _player.transform.position.x) //Verifica si la posicion del mouse esta a la derecha del player
+            {
+                _player.FlipPlayer(Player.Direction
+                    .Left); //Visualmente cambia la direccion del player relativamente a la posicion del mouse
+                _player.playerGun.Aim(mousePosition); //El arma apunta a la posisicion relativa del mouse
+            }
 
-			//Aim
-			mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition); //Captura la posicion del mouse en el juego
-			if (mousePosition.x > _player.transform.position.x) //Verifica si la posicion del mouse esta a la derecha del player
-			{
-				_player.Flip(Player.Direction.Left); //Visualmente cambia la direccion del player relativamente a la posicion del mouse
-				_player.PlayerGun.Aim(mousePosition);//El arma apunta a la posisicion relativa del mouse
-			}
+            else if
+                (mousePosition.x <
+                 _player.transform.position.x) //Verifica si la posicion del mouse esta a la izquierda del player
+            {
+                _player.FlipPlayer(Player.Direction.Right);
+                _player.playerGun.Aim(mousePosition);
+            }
 
-			else if (mousePosition.x < _player.transform.position.x)//Verifica si la posicion del mouse esta a la izquierda del player
-			{
-				_player.Flip(Player.Direction.Right);
-				_player.PlayerGun.Aim(mousePosition);
-			}
-			//Shoot
-			if (Input.GetMouseButtonDown(0))
-			{
-				_player.Shoot(mousePosition);
+            //Shoot
+            if (Input.GetMouseButtonDown(0))
+            {
+                _player.Shoot(mousePosition);
+            }
 
-			}
-			if (Input.GetMouseButtonDown(1))
-			{
-				_player.PlayerGun.DetachHook();
-			}
-		}
-		
-	}
+            if (Input.GetMouseButtonDown(1))
+            {
+                _player.playerGun.DetachHook();
+            }
+        }
+    }
+
     private void FixedUpdate()
     {
-		if(!_player.isDamage)
+        if (!_player.isDamage)
         {
-			//Walk
-			if ((Input.GetAxis("Vertical") == 0) && (Input.GetAxis("Horizontal") < 0))
-			{
-				_player.Walk(Player.Direction.Left);
-				_player.WalkOn();
-			}
-			if ((Input.GetAxis("Vertical") == 0) && (Input.GetAxis("Horizontal") > 0))
-			{
-				_player.Walk(Player.Direction.Right);
-				_player.WalkOn();
+            //Walk
+            if ((Input.GetAxis("Vertical") == 0) && (Input.GetAxis("Horizontal") < 0))
+            {
+                _player.Walk(Player.Direction.Left);
+                _player.WalkOn();
+            }
 
-			}
-			if (Input.GetAxis("Horizontal") == 0 || (Input.GetAxis("Vertical") > 0))
-			{
-				_player.WalkOff();
-			}
-		}
-		
-	}
-    #endregion
+            if ((Input.GetAxis("Vertical") == 0) && (Input.GetAxis("Horizontal") > 0))
+            {
+                _player.Walk(Player.Direction.Right);
+                _player.WalkOn();
+            }
 
-    #region Public Methods
-    #endregion
+            if (Input.GetAxis("Horizontal") == 0 || (Input.GetAxis("Vertical") > 0))
+            {
+                _player.WalkOff();
+            }
+        }
+    }
 
-    #region Private Methods
     #endregion
 }

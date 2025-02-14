@@ -2,11 +2,18 @@ using UnityEngine;
 
 public class PlatformMobile : MonoBehaviour
 {
+    #region Fields
+
     [SerializeField] private float _speed;
+
     private Vector2 _pointA;
     private Vector2 _pointB;
     private Vector2 _target;
     private bool _isActive;
+
+    #endregion
+
+    #region Unity Callbacks
 
     void Start()
     {
@@ -28,6 +35,10 @@ public class PlatformMobile : MonoBehaviour
             }
         }
     }
+
+    #endregion
+
+    #region Private Methods
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -66,4 +77,6 @@ public class PlatformMobile : MonoBehaviour
             _isActive = false;
         }
     }
+
+    #endregion
 }
