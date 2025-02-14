@@ -46,7 +46,6 @@ public class PlatFormDissapear : MonoBehaviour
         _corrutineIsOn = true;
         while (isActive)
         {
-            Debug.Log("Trabajando");
             yield return new WaitForSeconds(Random.Range(3f, 6f));
             foreach (Collider2D i in _platformColliders)
             {

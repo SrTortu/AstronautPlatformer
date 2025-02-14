@@ -73,14 +73,11 @@ public class HookTrigger : MonoBehaviour
             _hookPoint = _hit.point;
             isHooked = true;
             _hookPoint = _hit.point;
-            // Dibujar la cuerda
             hookLine.enabled = true;
-            //Captura el script de la plataforma golpeada para corregir interacciones 
             _isSpecial = _hit.collider.gameObject.TryGetComponent<PlatFormDissapear>(out _platFormDissapear);
         }
     }
 
-    
 
     public void DetachHook()
     {
@@ -95,17 +92,19 @@ public class HookTrigger : MonoBehaviour
     private void MoveTowardsHook()
     {
         _hookDirection = GetHookDirection();
-        //Evita que el player se quede quieto al estar enganchado
         if (_hookStrengh == 0)
+        {
             _hookStrengh = _hookStrenghAlter;
+        }
+
         _playerRB.AddForce(_hookDirection * _hookStrengh, ForceMode2D.Force);
-        //Reduce la la aplicaciond de fuerza en caso de que la altura del player supere la plataforma
         if (this.transform.position.y > _hookPoint.y)
         {
             _hookStrenghAlter = _hookStrengh;
             _hookStrengh = 0;
         }
     }
+
     private void UpdateHook()
     {
         if (_hookedPlatform != null && _hookPoint != null)
@@ -126,6 +125,6 @@ public class HookTrigger : MonoBehaviour
             Physics2D.Raycast(initialPosition.position, _hookDirection, _hookMaxDistance, _platformLayer);
         return hit;
     }
+
     #endregion
-    
 }
