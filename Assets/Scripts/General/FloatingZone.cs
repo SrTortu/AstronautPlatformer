@@ -1,6 +1,8 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class FloatingZone : MonoBehaviour
 {
@@ -8,7 +10,13 @@ public class FloatingZone : MonoBehaviour
 
     [SerializeField] private float floatingForce;
     [SerializeField] private ItemSpawner spawner;
+    [SerializeField] private EndMessage _endMessage;
+    [SerializeField] private AudioSource _audioSource;
+    [SerializeField] private AudioClip _audioClip;
+
     private Rigidbody2D _playerRB;
+    private float _timer;
+    private bool _isEnding;
 
     #endregion
 
@@ -17,6 +25,7 @@ public class FloatingZone : MonoBehaviour
     private void Start()
     {
         floatingForce = 19000;
+        _isEnding = false;
     }
 
     private void FixedUpdate()
@@ -27,12 +36,31 @@ public class FloatingZone : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+        if (_isEnding)
+        {
+            _timer += Time.deltaTime;
+            if (_timer > 20f)
+            {
+                SceneManager.LoadScene("MainMenu");
+            }
+            
+        }
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
             _playerRB = collision.gameObject.GetComponent<Rigidbody2D>();
+            _playerRB.GetComponent<Jetpack>()._jumForce = 0;
             spawner.enabled = false;
+            _endMessage.enabled = true;
+            _audioSource.clip = _audioClip;
+            _audioSource.volume = 0.2f;
+            _audioSource.Play();
+            _isEnding = true;
         }
     }
 

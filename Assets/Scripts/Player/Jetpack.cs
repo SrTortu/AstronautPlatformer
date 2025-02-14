@@ -29,10 +29,10 @@ public class Jetpack : MonoBehaviour
     [SerializeField] private float _energyFlyingRatio;
     [SerializeField] private float _energyRegenerationRatio;
     [SerializeField] private float _horizontalForce;
-    [SerializeField] private float _jumForce;
     [SerializeField] private AudioSource _audioSource;
     [SerializeField] private AudioClip _audioClip;
     private Rigidbody2D _targetRB;
+    public float _jumForce;
 
     #endregion
 

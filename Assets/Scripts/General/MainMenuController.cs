@@ -27,6 +27,7 @@ public class MainMenuController : MonoBehaviour
     {
         if (!_audioSource.isPlaying)
         {
+            _audioSource.volume = 0.13f;
             _audioSource.PlayOneShot(_startGameMusic);
         }
     }
