@@ -14,11 +14,11 @@ PlayerSettings:
   accelerometerFrequency: 60
   companyName: XR Dreams
   productName: Super 2D Project
-  defaultCursor: {fileID: 0}
+  defaultCursor: {fileID: 2800000, guid: e48af484f1a6e5240952615cf3c6dca8, type: 3}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.7686275, g: 0.7686275, b: 0.7686275, a: 1}
   m_ShowUnitySplashScreen: 1
-  m_ShowUnitySplashLogo: 0
+  m_ShowUnitySplashLogo: 1
   m_SplashScreenOverlayOpacity: 1
   m_SplashScreenAnimation: 1
   m_SplashScreenLogoStyle: 1

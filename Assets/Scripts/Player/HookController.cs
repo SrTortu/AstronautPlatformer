@@ -16,14 +16,15 @@ public class HookTrigger : MonoBehaviour
 
     private PlatFormDissapear _platFormDissapear;
     private Transform _initialHookPosition;
+    private Transform _hookedPlatform;
     private Vector2 _relativePosition;
     private Vector3 _hookPoint;
     private Vector3 _hookDirection;
-    private Transform _hookedPlatform;
     private RaycastHit2D _hit;
     private float _hookStrenghAlter;
     private bool _isSpecial;
     private Dictionary<Collider2D, Light2D> _platformLights;
+    private Dictionary<Collider2D, PlatformColisionController> _platformsHookables;
     private List<Collider2D> _platformsInRange;
 
 
@@ -43,6 +44,7 @@ public class HookTrigger : MonoBehaviour
         _playerRB = GetComponentInParent<Rigidbody2D>();
         hookLine.enabled = false;
         _platformLights = new Dictionary<Collider2D, Light2D>();
+        _platformsHookables = new Dictionary<Collider2D, PlatformColisionController>();
         _platformsInRange = new List<Collider2D>();
     }
 
@@ -149,11 +151,13 @@ public class HookTrigger : MonoBehaviour
             if (!_platformLights.ContainsKey(platform))
             {
                 _platformLights[platform] = platform.GetComponent<Light2D>();
+                _platformsHookables[platform] = platform.GetComponent<PlatformColisionController>();
             }
 
             if (_platformLights[platform] != null)
             {
                 _platformLights[platform].enabled = true;
+                _platformsHookables[platform].isHoockable = true;
             }
 
             currentPlatformsInRange.Add(platform);
@@ -166,6 +170,7 @@ public class HookTrigger : MonoBehaviour
                 if (_platformLights[platform] != null)
                 {
                     _platformLights[platform].enabled = false;
+                    _platformsHookables[platform].isHoockable = false;
                 }
             }
         }

@@ -18,6 +18,7 @@ public class PlatformColisionController : MonoBehaviour
     private Collider2D _platformCollider;
     private PlatFormDissapear _platFormDissapear;
     private bool _isInvisible;
+    public bool isHoockable;
 
     #endregion
 
@@ -26,8 +27,8 @@ public class PlatformColisionController : MonoBehaviour
     private void Awake()
     {
         _platformCollider = GetComponent<Collider2D>();
-
         _isInvisible = TryGetComponent<PlatFormDissapear>(out _platFormDissapear);
+        isHoockable = false;
     }
 
     void OnTriggerEnter2D(Collider2D collision)

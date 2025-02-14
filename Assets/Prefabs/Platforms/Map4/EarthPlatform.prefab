@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8053108970465598878}
   - component: {fileID: 5377474691537977269}
   - component: {fileID: 4898153406201517839}
+  - component: {fileID: 5417013743434292121}
   - component: {fileID: 229423979733527862}
   - component: {fileID: 6782742888548125315}
   - component: {fileID: 123888783207253679}
@@ -63,6 +64,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 667f124728575894eaac13150451753f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isHoockable: 0
+--- !u!114 &5417013743434292121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1458671692986517474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 803049a9e69b9864280ceeed0e7c3344, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _cursorDefault: {fileID: 11400000, guid: 6c2b0d7fdadeaad4faa8b79206200695, type: 2}
+  _cursorGrab: {fileID: 11400000, guid: b0f72ced5b987764a954d60c02dde3f5, type: 2}
 --- !u!60 &229423979733527862
 PolygonCollider2D:
   m_ObjectHideFlags: 0
