@@ -41,7 +41,7 @@ public class FloatingZone : MonoBehaviour
         if (_isEnding)
         {
             _timer += Time.deltaTime;
-            if (_timer > 20f)
+            if (_timer > 15f)
             {
                 SceneManager.LoadScene("MainMenu");
             }
