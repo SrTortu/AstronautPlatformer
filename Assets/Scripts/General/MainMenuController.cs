@@ -5,35 +5,34 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuController : MonoBehaviour
 {
-	#region Properties
-	#endregion
+    #region Fields
 
-	#region Fields
-	[SerializeField] Button _startGameButton;
-	[SerializeField] Button _exitGameButton;
-	#endregion
+    [SerializeField] Button _startGameButton;
+    [SerializeField] Button _exitGameButton;
 
-	#region Unity Callbacks
-	// Start is called before the first frame update
-	void Start()
+    #endregion
+
+    #region Unity Callbacks
+
+    void Start()
     {
-		_startGameButton.onClick.AddListener(StartGame);
-		_exitGameButton.onClick.AddListener(ExitGame);
+        _startGameButton.onClick.AddListener(StartGame);
+        _exitGameButton.onClick.AddListener(ExitGame);
     }
 
+    #endregion
 
-	#endregion
+    #region Private Methods
 
-	#region Private Methods
+    private void ExitGame()
+    {
+        Application.Quit();
+    }
 
-	private void ExitGame()
-	{
-		Application.Quit();
-	}
+    private void StartGame()
+    {
+        SceneManager.LoadScene("InGame");
+    }
 
-	private void StartGame()
-	{
-		SceneManager.LoadScene("InGame");
-	}
-	#endregion
+    #endregion
 }

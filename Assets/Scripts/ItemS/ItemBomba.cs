@@ -3,18 +3,25 @@ using UnityEngine;
 
 public class ItemError : Item
 {
+    #region Constants
+
     const float ERROR_FORCE = 10000;
     const float ERROR_DOWN_POS = 2.5f;
 
+    #endregion
+
+    #region Unity Callbacks
 
     private void OnCollisionEnter2D(Collision2D collision)
+
+
     {
-        if (collision.gameObject.tag == "Ground")
+        if (collision.gameObject.CompareTag("Ground"))
         {
             Destroy(gameObject);
         }
 
-        if (collision.gameObject.tag == "Player")
+        if (collision.gameObject.CompareTag("Player"))
         {
             Jetpack jetpack = collision.gameObject.GetComponent<Jetpack>();
             jetpack.GetComponent<Rigidbody2D>().AddForce(Vector2.down * ERROR_FORCE);
@@ -30,4 +37,6 @@ public class ItemError : Item
             Recolected();
         }
     }
+
+    #endregion
 }

@@ -5,56 +5,70 @@ using UnityEngine;
 
 public class PlatFormDissapear : MonoBehaviour
 {
-    public bool isActive;
-    public bool isHide;
+    #region Fields
+
     private bool _corrutineIsOn;
-    private Collider2D [] _platformColliders;
+    private Collider2D[] _platformColliders;
     private SpriteRenderer _platformSprite;
     private Light2D _platformLight;
 
+    public bool isActive;
+    public bool isHide;
 
-    // Update is called once per frame
+    #endregion
+
+    #region Unity Callbacks
+
     private void Start()
     {
-        _platformColliders = GetComponents<Collider2D>(); 
+        _platformColliders = GetComponents<Collider2D>();
         _platformSprite = this.GetComponent<SpriteRenderer>();
         _platformLight = GetComponent<Light2D>();
         isActive = false;
         isHide = false;
         _corrutineIsOn = false;
-
     }
+
     void Update()
     {
-      if(!_corrutineIsOn) //se verifica que no se ejecuten corrutinas inesperadas
+        if (!_corrutineIsOn)
         {
             StartCoroutine(MakeInvisible());
         }
     }
+
+    #endregion
+
+    #region Private Methods
+
     IEnumerator MakeInvisible()
     {
         _corrutineIsOn = true;
-        while (isActive) // se verifica que se pueda activar la corrutina en caso de que el player este cerca 
+        while (isActive)
         {
             Debug.Log("Trabajando");
-            yield return new WaitForSeconds(Random.Range(3f,6f)); //Tiempo que toma en desaparecer
-            foreach (Collider2D i in _platformColliders) // Se apagan los colliders de la plataforma
+            yield return new WaitForSeconds(Random.Range(3f, 6f));
+            foreach (Collider2D i in _platformColliders)
             {
                 i.enabled = false;
             }
+
             _platformSprite.enabled = false;
             _platformLight.enabled = false;
             isHide = true;
-            yield return new WaitForSeconds(Random.Range(1.3f,2f)); //tiempo que toma en volver a aparecer
+            yield return new WaitForSeconds(Random.Range(1.3f, 2f));
             foreach (Collider2D i in _platformColliders)
             {
                 i.enabled = true;
             }
+
             _platformSprite.enabled = true;
             _platformLight.enabled = true;
             isHide = false;
-
         }
+
         _corrutineIsOn = false;
     }
+
+    #endregion
 }

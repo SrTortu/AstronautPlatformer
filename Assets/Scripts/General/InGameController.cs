@@ -4,13 +4,10 @@ using UnityEngine.SceneManagement;
 
 public class InGameController : MonoBehaviour
 {
-    
-    public static InGameController InstanceController; 
+    public static InGameController InstanceController;
 
     #region Unity Callbacks
 
-
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyUp(KeyCode.Escape))
@@ -25,31 +22,26 @@ public class InGameController : MonoBehaviour
         }
         else
         {
-            Destroy(gameObject); 
+            Destroy(gameObject);
         }
     }
 
-
-
     #endregion
-    // Si el player esta sobre la plataforma le permite pararse
+
+    #region Public Methods
+
     public void PlayerEnteredPlatformTrigger(PlatformColisionController platform, Collider2D player)
     {
-       
         if (player.transform.position.y < platform.transform.position.y)
         {
             Physics2D.IgnoreCollision(player, platform.PlatformCollider, true);
-           
         }
     }
-    // Si el player esta por debajo de la plataforma le permite ignorar la colision
+
     public void PlayerExitedPlatformTrigger(PlatformColisionController platform, Collider2D player)
     {
-        
         Physics2D.IgnoreCollision(player, platform.PlatformCollider, false);
-       
     }
 
-  
-    
+    #endregion
 }

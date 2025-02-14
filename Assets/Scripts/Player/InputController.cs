@@ -7,16 +7,12 @@ public class InputController : MonoBehaviour
 
     [SerializeField] private Jetpack _jetpack;
     [SerializeField] private Player _player;
+
     private Vector3 mousePosition;
 
     #endregion
 
     #region Unity Callbacks
-
-    void Start()
-    {
-    }
-
 
     void Update()
     {
@@ -46,21 +42,17 @@ public class InputController : MonoBehaviour
                 _jetpack.StopFlying();
             }
 
-
             //Aim
-            mousePosition =
-                Camera.main.ScreenToWorldPoint(Input.mousePosition); //Captura la posicion del mouse en el juego
+            mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             if (mousePosition.x >
-                _player.transform.position.x) //Verifica si la posicion del mouse esta a la derecha del player
+                _player.transform.position.x)
             {
-                _player.FlipPlayer(Player.Direction
-                    .Left); //Visualmente cambia la direccion del player relativamente a la posicion del mouse
-                _player.playerGun.Aim(mousePosition); //El arma apunta a la posisicion relativa del mouse
+                _player.FlipPlayer(Player.Direction.Left);
+                _player.playerGun.Aim(mousePosition);
             }
 
             else if
-                (mousePosition.x <
-                 _player.transform.position.x) //Verifica si la posicion del mouse esta a la izquierda del player
+                (mousePosition.x < _player.transform.position.x)
             {
                 _player.FlipPlayer(Player.Direction.Right);
                 _player.playerGun.Aim(mousePosition);
