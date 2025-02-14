@@ -10,15 +10,6 @@ public class GunController : MonoBehaviour
 
     #endregion
 
-    #region Unity Callbacks
-
-    private void Start()
-    {
-        _hookTrigger = GetComponentInChildren<HookTrigger>();
-    }
-
-    #endregion
-
     #region Public Methods
 
     public void Aim(Vector3 mousePosition)

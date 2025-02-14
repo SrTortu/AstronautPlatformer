@@ -4182,6 +4182,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _startGameButton: {fileID: 1063726955}
   _exitGameButton: {fileID: 1165613340}
+  _audioSource: {fileID: 1565666788}
+  _startGameMusic: {fileID: 8300000, guid: f95425b303f963f4f9dd1ac6b9dce172, type: 3}
 --- !u!82 &1565666788
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4194,7 +4196,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 15581af099e8139478e9bd5fba860621, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.25
   m_Pitch: 1
   Loop: 0
   Mute: 0

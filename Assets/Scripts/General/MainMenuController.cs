@@ -1,5 +1,6 @@
 using UnityEngine;
 using System;
+using UnityEngine.PlayerLoop;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
@@ -9,15 +10,25 @@ public class MainMenuController : MonoBehaviour
 
     [SerializeField] Button _startGameButton;
     [SerializeField] Button _exitGameButton;
+    [SerializeField] AudioSource _audioSource;
+    [SerializeField] AudioClip _startGameMusic;
 
     #endregion
 
     #region Unity Callbacks
 
-    void Start()
+    private void Start()
     {
         _startGameButton.onClick.AddListener(StartGame);
         _exitGameButton.onClick.AddListener(ExitGame);
+    }
+
+    private void Update()
+    {
+        if (!_audioSource.isPlaying)
+        {
+            _audioSource.PlayOneShot(_startGameMusic);
+        }
     }
 
     #endregion
