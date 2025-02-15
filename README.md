@@ -1,6 +1,27 @@
 # Super2DProject
+Change Log 14-02-2025:
 
-Change Log:
+Codigo:
+	*Se corrigen errores de formato
+	*Se corrigen nombres de variables y scripts
+	*Regiones debidamente ordenadas
+	*Se mejora consistencia del codigo en torno a la sintaxis
+	*Se eliminan comentarios innecesarios
+	*Eliminado codigo muerto
+	*Mejorada la captura de components
+Editor:
+	*Se ordena la carpeta de Assets
+	*Se corrige esquema de animaciones
+	
+Gameplay:
+	*Se mejora animacion del player cuando toma un objeto negativo
+	*Se añaden ayudas visuales para el gancho, ahora si algo esta a rango del gancho
+	 se ilumina por medio de ligh2d y ademas el cursor del mouse cambia si esta sobre una plataforma la cual este en rango
+	*Se mejora el tamaño de los items y velocidad de caida
+	*La cuerda del gancho tiene textura
+	*Se añade final
+--------------------------------------------------------------------
+Change Log 09-02-2025:
 
 Player: 
 
