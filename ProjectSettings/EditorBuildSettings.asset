@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/2DProject/InGame.unity
     guid: f5902a25bef88bb4e862e9ccd6583e8d
+  - enabled: 1
+    path: Assets/Scenes/2DProject/FreeWill.unity
+    guid: 8f87e268eb123b34f86209b385b946b9
   m_configObjects: {}

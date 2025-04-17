@@ -1,5 +1,6 @@
 using UnityEngine;
 using System;
+using UnityEngine.EventSystems;
 using UnityEngine.PlayerLoop;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
@@ -10,6 +11,7 @@ public class MainMenuController : MonoBehaviour
 
     [SerializeField] Button _startGameButton;
     [SerializeField] Button _exitGameButton;
+    [SerializeField] Button _dontTouchMeButton;
     [SerializeField] AudioSource _audioSource;
     [SerializeField] AudioClip _startGameMusic;
 
@@ -21,7 +23,10 @@ public class MainMenuController : MonoBehaviour
     {
         _startGameButton.onClick.AddListener(StartGame);
         _exitGameButton.onClick.AddListener(ExitGame);
+        _dontTouchMeButton.onClick.AddListener(FreeWillScreen);
+        EventSystem.current.SetSelectedGameObject(null);
     }
+
 
     private void Update()
     {
@@ -36,6 +41,10 @@ public class MainMenuController : MonoBehaviour
 
     #region Private Methods
 
+    private void FreeWillScreen()
+    {
+        SceneManager.LoadScene("FreeWill");
+    }
     private void ExitGame()
     {
         Application.Quit();

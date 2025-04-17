@@ -12,8 +12,8 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: XR Dreams
-  productName: Super 2D Project
+  companyName: SrTortuIndie
+  productName: Astronaut Platformer
   defaultCursor: {fileID: 2800000, guid: e48af484f1a6e5240952615cf3c6dca8, type: 3}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.7686275, g: 0.7686275, b: 0.7686275, a: 1}
@@ -133,7 +133,7 @@ PlayerSettings:
   vulkanEnableLateAcquireNextImage: 0
   vulkanEnableCommandBufferRecycling: 1
   loadStoreDebugModeEnabled: 0
-  bundleVersion: 2023 1.0
+  bundleVersion: Prototype 1.0
   preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
@@ -154,7 +154,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Standalone: com.XR-Dreams.Super-2D-Project
+    Standalone: com.SrTortuIndie.Astronaut-Platformer
   buildNumber:
     Standalone: 0
     VisionOS: 0

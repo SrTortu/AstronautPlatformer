@@ -1,5 +1,3 @@
-# Link to itch.io: https://srtortugga.itch.io/astronautplatformer
-
 # Super2DProject
 Change Log 14-02-2025:
 

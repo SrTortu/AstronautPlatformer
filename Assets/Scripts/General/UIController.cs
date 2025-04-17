@@ -27,9 +27,9 @@ public class UIController : MonoBehaviour
     void Update()
     {
         _energySlider.value = _jetpack.Energy;
-        _textSlider.text = ((int)_jetpack.transform.position.y).ToString();
+        _textSlider.text ="Altitude: " +((int)_jetpack.transform.position.y).ToString();
 
-        if (!_jetpack.Flying && !_player.isDamage && Input.GetKeyDown(KeyCode.Space))
+        if (!_jetpack.Flying && !_player.isDamage && Input.GetKeyDown(KeyCode.Space) && _jetpack.Energy < 50)
         {
             _audioSource.PlayOneShot(_noEnergySound);
             StartCoroutine(ShowAlert());
