@@ -1,69 +1,90 @@
-# Link to itch.io : https://srtortugga.itch.io/astronautplatformer
-# Super2DProject
-Change Log 14-02-2025:
+# Astronaut Platformer 🚀
 
-Code:
+**🎮 [Play on itch.io](https://srtortugga.itch.io/astronautplatformer)**
 
-    -Formatting errors corrected
-    -Variable and script names corrected
-    -Regions properly organized
-    -Improved code consistency regarding syntax
-    -Removed unnecessary comments
-    -Removed dead code
-    -Improved component capturing
+A thrilling 2D vertical scrolling platformer where you play as an astronaut equipped with a grappling hook gun, navigating through challenging levels filled with dynamic platforms and items that affect your abilities.
 
-Editor:
+## 🌟 Game Description
 
-    -Organized the Assets folder
-    -Fixed animation scheme
+Astronaut Platformer is an action-packed 2D platformer that combines traditional jumping mechanics with innovative grappling hook gameplay. Navigate through vertically scrolling levels as a space-suited adventurer, using your jetpack for mobility and your grappling hook gun to reach distant platforms.
 
-Gameplay:
+The game features multiple types of platforms with unique behaviors, from disappearing and reappearing platforms to moving platforms that challenge your timing and precision. Collect items that can either boost your abilities or present dangerous challenges that require quick thinking to overcome.
 
-    -Improved player animation when picking up a negative item
-    -Added visual aids for the grappling hook, now if something is within range, it lights up using Light2D, and the mouse cursor changes when hovering over a platform that is in range
-    -Improved item size and falling speed
-    -The grappling hook rope now has a texture
-    -Added an ending
+## 🎯 Key Features
 
-Change Log 09-02-2025:
+- **Grappling Hook Mechanics**: Shoot hooks up to 10 meters to attach to platforms and swing across gaps
+- **Dynamic Jetpack System**: Energy-based flight system with visual and audio feedback
+- **Interactive Platforms**: Multiple platform types including disappearing, moving, and low-friction surfaces
+- **Item System**: Collectible items that modify player abilities, both positively and negatively
+- **Atmospheric Audio**: Classic arcade-inspired soundtrack featuring tracks from Metal Slug and Contra
+- **Visual Feedback**: Smart cursor changes and lighting effects when platforms are within grappling range
 
-Player:
+## 🎮 Controls
 
-    -The player can now pass through platforms from below
-    -The player can now run (using movement keys)
-    -"Fly" has been changed to "Jump" (Space key)
-    -The player now looks toward the relative position of the mouse
-    -Implemented grappling hook gun
-    -Added a visual and sound alert when the player doesn’t have enough energy to jump
-    -Jumping now has sound
-    -Added animation for the negative effects of items
+### Input Instructions:
+- **Left Click**: Shoot the grappling hook
+- **A / D Keys**: Move sideways (walking/flying horizontally)
+- **Space**: Jump/Activate jetpack
+- **Esc**: Return to main menu
+- **Mouse Movement**: Aim your grappling hook gun
+- **Right Click**: Detach grappling hook
 
-Grappling Hook Gun: The gun shoots a hook (left-click) that attaches to a platform if it's within 10m or less
+### Gameplay Mechanics:
+- Your astronaut automatically faces the direction of your mouse cursor
+- Walking is possible when not using the jetpack (horizontal movement only)
+- Jumping automatically detaches any active grappling hook
+- Energy system limits jetpack usage with regeneration over time
+- Items provide temporary effects that can help or hinder your progress
 
-    -The player's gun now points relative to the mouse position
-    -Jumping removes the hook from the platform
-    -Right-click removes the hook (no utility)
-    -If the platform disappears, the hook does too
-    -If the platform moves, the hook maintains its position on the platform
-    -Added shooting sound
+## 📸 Screenshots
 
-Platforms: Added special platforms (Levels 3, 4, and 5)
+![Gameplay Screenshot 1](Screnshots/Unity_Lt0fG5SuTV.png)
+*Early level gameplay showing basic platforming*
 
-    -Level 3 platforms disappear and reappear at random intervals
-    -Level 4 platforms move along the X-axis between two points A and B
-        *The player can stand on Level 4 platforms and move along with them
-    -Level 5 platforms also move but have a specific material with low friction
+![Gameplay Screenshot 2](Screnshots/Unity_MjRgjdLBr8.png)
+*Advanced level with moving platforms and grappling hook mechanics*
 
-Environment:
+![Gameplay Screenshot 3](Screnshots/Unity_PZk20yxrrW.png)
+*Dynamic lighting effects and environmental interaction*
 
-    -Added lighting to levels
-    -Changed "InGame" music (now "Inner Station" from Metal Slug)
-    -Added intro music to the Main Menu (Intro from Contra)
+![Gameplay Screenshot 4](Screnshots/Unity_ehq75sASMn.png)
+*Item collection and special platform types*
 
-Items: Reworked all items, including functionality, sprites, particles, and sounds
+![Gameplay Screenshot 5](Screnshots/Unity_zf3Z5GUlXg.png)
+*Complex level design with multiple platform varieties*
 
-    -Bomb Item: Gives the player a negative impulse on the Y-axis and paralyzes them for 1 second. If the player is hooked to a platform, the hook is removed
-    -Skull Item: Decreases energy regeneration rate by -0.1 and paralyzes the player for 1 second
-    -Water Item: Increases energy regeneration rate by 0.1
-    -Items are now properly removed when touching the ground
+## 🛠️ Technical Details
 
+- **Engine**: Unity 2022.3.5f1
+- **Platform**: PC (Windows/Mac/Linux)
+- **Genre**: 2D Platformer, Action
+- **Art Style**: Pixel Art
+- **Input System**: Keyboard + Mouse
+
+## 📋 Platform Types
+
+- **Level 1-2**: Standard static platforms
+- **Level 3**: Disappearing/reappearing platforms with random intervals
+- **Level 4**: Horizontally moving platforms (players move with them)
+- **Level 5**: Moving platforms with low-friction materials
+
+## 🎒 Items
+
+- **💧 Water Item**: Increases energy regeneration rate (+0.1)
+- **💣 Bomb Item**: Applies downward force and briefly paralyzes the player
+- **💀 Skull Item**: Decreases energy regeneration rate (-0.1) and causes temporary paralysis
+
+## 📝 Development Notes
+
+This project showcases clean C# scripting practices with organized code structure, efficient component references, and polished game feel. The input system is designed for intuitive control while providing depth through the grappling hook mechanics.
+
+For detailed development history and recent changes, see [CHANGELOG.md](CHANGELOG.md).
+
+## 🔗 Links
+
+- **[Play the Game](https://srtortugga.itch.io/astronautplatformer)** - Available on itch.io
+- **[Changelog](CHANGELOG.md)** - Development history and updates
+
+---
+
+*Developed with Unity 2022.3.5f1 | Press Space to Continue Your Adventure!*
